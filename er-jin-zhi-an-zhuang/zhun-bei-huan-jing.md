@@ -25,26 +25,6 @@
 
 > remi包含最新版本 PHP 和 MySQL 包的 Linux 源，由 Remi 提供维护。请按照 [向导](https://rpms.remirepo.net/wizard/ "向导") 的指示安装配置。
 
-### percona备份命令xtrabackup
-
-参考地址：[https://www.percona.com/downloads/Percona-XtraBackup-LATEST/](https://www.percona.com/downloads/Percona-XtraBackup-LATEST/)
-
-**安装依赖**
-
-> yum -y install perl perl-devel libaio libaio-devel perl-Time-HiRes perl-DBD-MySQL libev perl-Digest-MD5
-
-**CentOS 6 x86 64位运行**
-
-> wget [https://www.percona.com/downloads/Percona-XtraBackup-LATEST/Percona-XtraBackup-8.0-6/binary/redhat/6/x86\_64/percona-xtrabackup-80-8.0.6-1.el6.x86\_64.rpm](https://www.percona.com/downloads/Percona-XtraBackup-LATEST/Percona-XtraBackup-8.0-6/binary/redhat/6/x86_64/percona-xtrabackup-80-8.0.6-1.el6.x86_64.rpm)
->
-> rpm -ivh percona-xtrabackup-80-8.0.6-1.el6.x86\_64.rpm
-
-**CentOS 7 x86 64位运行**
-
-> wget [https://www.percona.com/downloads/Percona-XtraBackup-LATEST/Percona-XtraBackup-8.0-6/binary/redhat/7/x86\_64/percona-xtrabackup-80-8.0.6-1.el7.x86\_64.rpm](https://www.percona.com/downloads/Percona-XtraBackup-LATEST/Percona-XtraBackup-8.0-6/binary/redhat/7/x86_64/percona-xtrabackup-80-8.0.6-1.el7.x86_64.rpm)
->
-> rpm -ivh percona-xtrabackup-80-8.0.6-1.el7.x86\_64.rpm
-
 # 相关软件（Nginx+MySQL+PHP+Medusa）
 
 Nginx、Medusa
