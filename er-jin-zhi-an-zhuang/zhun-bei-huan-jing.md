@@ -25,11 +25,11 @@
 
 > remi包含最新版本 PHP 和 MySQL 包的 Linux 源，由 Remi 提供维护。请按照 [向导](https://rpms.remirepo.net/wizard/ "向导") 的指示安装配置。
 
-# 相关软件（Nginx+MySQL+PHP+Medusa）
+# 相关软件（Nginx+MySQL+PHP+Medusa+Nmap）
 
-Nginx、Medusa
+Nginx、Medusa、Nmap
 
-> yum -y install nginx openssl openssl-devel medusa
+> yum -y install nginx openssl openssl-devel medusa nmap
 >
 > \#创建Nginx日志目录
 >
