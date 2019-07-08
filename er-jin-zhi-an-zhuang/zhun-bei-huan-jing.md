@@ -75,7 +75,17 @@
 >
 > yum -y install zlib zlib-devel php php-mysql php-gd php-fpm php-mbstring mcrypt php-mcrypt openssl-devel pcre-devel php-bcmath php-xml php-xmlrpc php-ldap
 
-### Nginx+MySQL+PHP**建议配置**
+### Nginx**建议配置**
 
-[参考](https://github.com/yunweibang/bigops-LNMP-config)
+[https://github.com/yunweibang/bigops-LNMP-config/blob/master/nginx/nginx.conf](https://github.com/yunweibang/bigops-LNMP-config/blob/master/nginx/nginx.conf)
+
+[https://github.com/yunweibang/bigops-LNMP-config/tree/master/nginx/conf.d](https://github.com/yunweibang/bigops-LNMP-config/tree/master/nginx/conf.d)
+
+### PHP**建议配置**
+
+[https://github.com/yunweibang/bigops-LNMP-config/tree/master/php](#)
+
+### MySQL**建议配置**
+
+[https://github.com/yunweibang/bigops-LNMP-config/tree/master/mysql](https://github.com/yunweibang/bigops-LNMP-config/tree/master/mysql)
 
