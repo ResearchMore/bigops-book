@@ -81,11 +81,11 @@
 
 [https://github.com/yunweibang/bigops-LNMP-config/tree/master/nginx/conf.d](https://github.com/yunweibang/bigops-LNMP-config/tree/master/nginx/conf.d)
 
-### PHP**建议配置**
-
-[https://github.com/yunweibang/bigops-LNMP-config/tree/master/php](#)
-
 ### MySQL**建议配置**
 
 [https://github.com/yunweibang/bigops-LNMP-config/tree/master/mysql](https://github.com/yunweibang/bigops-LNMP-config/tree/master/mysql)
+
+### PHP**建议配置**
+
+[https://github.com/yunweibang/bigops-LNMP-config/tree/master/php](#)
 
