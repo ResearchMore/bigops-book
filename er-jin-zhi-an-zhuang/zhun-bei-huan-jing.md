@@ -41,7 +41,7 @@ MySQL，建议版本为5.7或5.8，如果已安装就忽略。也可以安装其
 
 Medusa，检查密码正确性工具。
 
-> yum -y medusa
+> yum -y install medusa
 
 Nmap，扫描工具，建议下载源代码安装最新版本。
 
@@ -49,13 +49,19 @@ Nmap，扫描工具，建议下载源代码安装最新版本。
 
 jq，json格式处理工具，建议下载源代码安装最新版本。
 
-> yum -y jq
+> yum -y install jq
 
 Ansibile，配置工具
 
-> yum -y ansible
+> yum -y install ansible
 >
 > cp /opt/bigops/config/ansible.cfg /root/.ansible.cfg
+
+php
+
+> 如果有运行zabbix，还需要安装php
+>
+> yun -y install zlib zlib-devel php php-mysql php-gd php-fpm php-mbstring mcrypt php-mcrypt openssl-devel pcre-devel php-bcmath php-xml php-xmlrpc php-ldap
 
 ### Linux+Nginx+MySQL+PHP**建议配置**
 
