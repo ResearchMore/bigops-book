@@ -16,3 +16,7 @@
 
 [https://github.com/yunweibang/bigops-wizard](https://github.com/yunweibang/bigops-wizard)
 
+## **用JAVA管理软件导入、编译打包，这里不再详细介绍。**
+
+
+
