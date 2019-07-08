@@ -45,7 +45,7 @@
 >
 > 源码安装
 >
-> 到这里下载[http://foofus.net/goons/jmk/tools/](http://foofus.net/goons/jmk/tools/)
+> wget -c http://foofus.net/goons/jmk/tools/medusa-2.2.tar.gz
 >
 > tar zxvf medusa-2.2.tar.gz
 >
