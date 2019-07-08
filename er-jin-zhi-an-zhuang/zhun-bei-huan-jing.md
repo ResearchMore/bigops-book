@@ -42,6 +42,16 @@
 **Medusa，检查密码正确性工具。**
 
 > yum -y install medusa
+>
+> 源码安装
+>
+> 到这里下载[http://foofus.net/goons/jmk/tools/](http://foofus.net/goons/jmk/tools/)
+>
+> tar zxvf medusa-2.2.tar.gz
+>
+> ./configure
+>
+> make && make install
 
 **Nmap，扫描工具，建议下载源代码安装最新版本。**
 
@@ -61,7 +71,7 @@
 
 > 如果有运行zabbix，还需要安装php
 >
-> yun -y install zlib zlib-devel php php-mysql php-gd php-fpm php-mbstring mcrypt php-mcrypt openssl-devel pcre-devel php-bcmath php-xml php-xmlrpc php-ldap
+> yum -y install zlib zlib-devel php php-mysql php-gd php-fpm php-mbstring mcrypt php-mcrypt openssl-devel pcre-devel php-bcmath php-xml php-xmlrpc php-ldap
 
 ### Linux+Nginx+MySQL+PHP**建议配置**
 
