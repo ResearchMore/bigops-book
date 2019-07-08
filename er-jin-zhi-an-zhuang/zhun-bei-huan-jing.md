@@ -57,7 +57,7 @@ Ansibile，配置工具
 >
 > cp /opt/bigops/config/ansible.cfg /root/.ansible.cfg
 
-php
+PHP
 
 > 如果有运行zabbix，还需要安装php
 >
