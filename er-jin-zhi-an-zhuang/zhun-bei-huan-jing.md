@@ -41,15 +41,17 @@
 
 **Medusa，检查密码正确性工具。**
 
-> yum -y install medusa
+> yum -y install medusa libssh2
 >
 > 源码安装
 >
-> wget -c http://foofus.net/goons/jmk/tools/medusa-2.2.tar.gz
+> yum -y install libssh2
+>
+> wget -c [http://foofus.net/goons/jmk/tools/medusa-2.2.tar.gz](http://foofus.net/goons/jmk/tools/medusa-2.2.tar.gz)
 >
 > tar zxvf medusa-2.2.tar.gz
 >
-> ./configure
+> ./configure --prefix=/usr
 >
 > make && make install
 
@@ -73,7 +75,7 @@
 >
 > yum -y install zlib zlib-devel php php-mysql php-gd php-fpm php-mbstring mcrypt php-mcrypt openssl-devel pcre-devel php-bcmath php-xml php-xmlrpc php-ldap
 
-### Linux+Nginx+MySQL+PHP**建议配置**
+### Nginx+MySQL+PHP**建议配置**
 
 [参考](https://github.com/yunweibang/bigops-LNMP-config)
 

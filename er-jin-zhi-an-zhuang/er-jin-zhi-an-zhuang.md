@@ -7,6 +7,8 @@
 > 请把下载的文件放在/opt目录
 >
 > tar zxvf bigops-1.0.0.tar.gz
+>
+> mv bigops-1.0.0 bigops
 
 ### 检查运行环境
 
