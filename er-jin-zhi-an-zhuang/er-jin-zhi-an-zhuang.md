@@ -26,6 +26,8 @@
 >
 > tcp6       0      0 127.0.0.1:30003         :::\*                    LISTEN      2710/java
 
+### 确认Nginx、MySQL已经启动，并且配置正确
+
 ### **访问安装向导**
 
 [http://work.bigops.com/wizard/](http://work.bigops.com/wizard/)
