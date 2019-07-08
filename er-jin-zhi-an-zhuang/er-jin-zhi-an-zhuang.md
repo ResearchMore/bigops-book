@@ -14,11 +14,11 @@
 
 > sh /opt/bigops/bin/check\_env.sh
 
-### 启动安装向导
+### 启动「安装向导」
 
 > sh /opt/bigops/bin/start.sh
 
-### **检查服务是否启动**
+### **检查BigOps Tomcat服务是否启动**
 
 > \# netstat -nptl\|egrep '30002\|30003'
 >
@@ -26,11 +26,15 @@
 >
 > tcp6       0      0 127.0.0.1:30003         :::\*                    LISTEN      2710/java
 
-### 确认Nginx、MySQL已经启动，并且配置正确
-
-### **访问安装向导**
+### 确认Nginx、MySQL安装正确，**访问安装向导**
 
 [http://work.bigops.com/wizard/](http://work.bigops.com/wizard/)
 
-![](/assets/Xnip2019-05-20_16-05-02.jpg)
+# ![](/assets/Xnip2019-05-20_16-05-02.jpg)设置定时清理日志
+
+> crontab -e
+>
+> 00 01 \* \* \* /bin/sh /opt/bigops/bin/clean\_log.sh
+
+
 
