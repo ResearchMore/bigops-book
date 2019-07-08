@@ -27,15 +27,11 @@
 
 # 相关软件（Nginx+MySQL+PHP+Medusa+Nmap+Ansible）
 
-Nginx、Medusa、Nmap
-
 > yum -y install nginx openssl openssl-devel medusa nmap ansible
 >
 > \#创建Nginx日志目录
 >
 > mkdir /opt/ngxlog/
-
-
 
 MySQL，建议版本为5.7或5.8，如果已安装就忽略。也可以安装其他MySQL发行版。
 
