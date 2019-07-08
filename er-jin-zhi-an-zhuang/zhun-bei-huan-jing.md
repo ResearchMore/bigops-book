@@ -27,7 +27,7 @@
 
 # 相关软件
 
-Nginx，web服务器
+Nginx
 
 > yum -y install nginx
 >
