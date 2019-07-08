@@ -27,7 +27,7 @@
 
 # 相关软件
 
-Nginx
+**Nginx**
 
 > yum -y install nginx
 >
@@ -35,29 +35,29 @@ Nginx
 >
 > mkdir /opt/ngxlog/
 
-MySQL，建议版本为5.7或5.8，如果已安装就忽略。也可以安装其他MySQL发行版。
+**MySQL，建议版本为5.7或5.8，如果已安装就忽略。也可以安装其他MySQL发行版。**
 
 > yum -y install mysql-community-server mysql-community-client mysql-community-devel
 
-Medusa，检查密码正确性工具。
+**Medusa，检查密码正确性工具。**
 
 > yum -y install medusa
 
-Nmap，扫描工具，建议下载源代码安装最新版本。
+**Nmap，扫描工具，建议下载源代码安装最新版本。**
 
-> yum -y nmap
+> yum -y install nmap
 
-jq，json格式处理工具，建议下载源代码安装最新版本。
+**jq，json格式处理工具，建议下载源代码安装最新版本。**
 
 > yum -y install jq
 
-Ansibile，配置工具
+**Ansibile，配置管理工具**
 
 > yum -y install ansible
 >
 > cp /opt/bigops/config/ansible.cfg /root/.ansible.cfg
 
-PHP
+**PHP**
 
 > 如果有运行zabbix，还需要安装php
 >
