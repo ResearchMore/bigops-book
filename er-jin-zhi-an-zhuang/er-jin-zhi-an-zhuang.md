@@ -26,11 +26,13 @@
 >
 > tcp6       0      0 127.0.0.1:30003         :::\*                    LISTEN      2710/java
 
-### 确认Nginx、MySQL安装正确，**访问安装向导**
+### 确认Nginx、MySQL安装正确，**访问安装向导，根据提示进行操作**
 
 [http://work.bigops.com/wizard/](http://work.bigops.com/wizard/)
 
-# ![](/assets/Xnip2019-05-20_16-05-02.jpg)设置定时清理日志
+![](/assets/Xnip2019-05-20_16-05-02.jpg)
+
+# 设置定时清理日志
 
 > crontab -e
 >
