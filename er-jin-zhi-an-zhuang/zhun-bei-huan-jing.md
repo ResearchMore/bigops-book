@@ -25,19 +25,25 @@
 
 > remi包含最新版本 PHP 和 MySQL 包的 Linux 源，由 Remi 提供维护。请按照 [向导](https://rpms.remirepo.net/wizard/ "向导") 的指示安装配置。
 
-# 相关软件（Nginx+MySQL+PHP+Medusa+Nmap）
+# 相关软件（Nginx+MySQL+PHP+Medusa+Nmap+Ansible）
 
 Nginx、Medusa、Nmap
 
-> yum -y install nginx openssl openssl-devel medusa nmap
+> yum -y install nginx openssl openssl-devel medusa nmap ansible
 >
 > \#创建Nginx日志目录
 >
 > mkdir /opt/ngxlog/
 
+
+
 MySQL，建议版本为5.7或5.8，如果已安装就忽略。也可以安装其他MySQL发行版。
 
 > yum -y install mysql-community-server mysql-community-client mysql-community-devel
+
+### Ansible**建议配置**
+
+> cp /opt/bigops/config/ansible.cfg /root/.ansible.cfg
 
 ### Linux+Nginx+MySQL+PHP**建议配置**
 
