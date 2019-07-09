@@ -116,6 +116,10 @@ StrictHostKeyChecking no
 >
 > chmod 777 /usr/bin/jq
 
+### 安装Nmap，扫描工具
+
+> yum -y install nmap
+
 ### 安装Nginx
 
 > yum -y install nginx
