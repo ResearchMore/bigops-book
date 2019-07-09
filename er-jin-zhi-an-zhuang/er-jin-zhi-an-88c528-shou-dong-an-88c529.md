@@ -86,7 +86,7 @@
 >
 > cp -f /opt/bigops/install/ansible.cfg /root/.ansible.cfg
 
-或者修改文件/etc/ansible/ansible.cfg
+并修改文件/etc/ansible/ansible.cfg
 
 > \[defaults\]
 >
@@ -103,6 +103,10 @@
 > scp\_if\_ssh=True
 >
 > ssh\_args = -o LogLevel=quiet -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
+
+修改ssh命令的配置文件 /etc/ssh/ssh\_config，将StrictHostKeyChecking设置为no
+
+StrictHostKeyChecking no
 
 ### 安装jq，json文件解析工具
 

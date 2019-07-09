@@ -56,6 +56,26 @@
 
 > service mysqld restart
 
+### 配置Ansible
+
+修改文件/etc/ansible/ansible.cfg
+
+> \[defaults\]
+>
+> inventory = /etc/ansible/hosts
+>
+> stdout =json
+>
+> host\_key\_checking= False
+>
+> deprecation\_warnings=False
+>
+> \[ssh\_connection\]
+>
+> scp\_if\_ssh=True
+>
+> ssh\_args = -o LogLevel=quiet -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
+
 ### 配置hosts文件
 
 如果你没有注册域名，需要给服务器和你的笔记本系统都配置hosts。
