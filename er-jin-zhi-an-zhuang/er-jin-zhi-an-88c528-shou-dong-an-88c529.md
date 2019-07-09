@@ -66,6 +66,38 @@
 >
 > mysql -u _user -p bigops &lt; bigops-1.0.0.sql_
 
+### 安装Medusa，一个密码检查工具
+
+> yum -y install libssh2
+>
+> cd /opt/bigops/install/soft/
+>
+> tar zxvf medusa-2.2.tar.gz
+>
+> cd medusa-2.2
+>
+> ./configure --prefix=/usr
+>
+> make && make install
+
+### 安装Ansible，配置管理工具
+
+> yum -y install ansible
+
+### 安装jq，json文件解析工具
+
+> cp -f /opt/bigops/install/ansible.cfg /root/.ansible.cfg
+>
+> cp  /usr/bin/jq /usr/bin/jqbak
+>
+> cp -f /opt/bigops/install/soft/jq-linux64 /usr/bin/jq
+>
+> chmod 777 /usr/bin/jq
+
+### 安装Nginx
+
+
+
 ### 设置配置文件
 
 > vi /opt/bigops/config/bigops.properties
