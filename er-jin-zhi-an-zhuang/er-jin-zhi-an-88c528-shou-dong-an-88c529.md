@@ -118,7 +118,15 @@ StrictHostKeyChecking no
 
 ### 安装Nmap，扫描工具
 
-> yum -y install nmap
+> cd /opt/bigops/install/soft/
+>
+> tar zxvf nmap-7.70.tgz
+>
+> cd nmap-7.70
+>
+> ./configure --prefix=/usr
+>
+> make && make install
 
 ### 安装Nginx
 
