@@ -43,7 +43,7 @@
 >
 > mkdir /opt/ngxlog/
 
-**MySQL，建议版本为5.7，如果已安装就忽略。也可以安装其他MySQL发行版。**
+**MySQL，建议版本为5.7。**
 
 > yum -y install mysql-community-server mysql-community-client mysql-community-devel
 
