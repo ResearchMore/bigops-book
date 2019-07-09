@@ -22,7 +22,7 @@
 >
 > 需要重启系统
 
-### 进入MySQL，创建数据库
+### 进入MySQL，创建数据库，建议MySQL版本为5.7
 
 > mysql&gt;create database bigops;
 >
