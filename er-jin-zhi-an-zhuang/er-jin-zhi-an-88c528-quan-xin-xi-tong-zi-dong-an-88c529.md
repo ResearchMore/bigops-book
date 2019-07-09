@@ -110,6 +110,12 @@ Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 >
 > tcp        0      0 127.0.0.1:30003             0.0.0.0:\*                   LISTEN      26830/java
 
+运行下面命令，如果返回值包括「sso系统正常」，说明运行正常，如果没有返回值说明有问题，需要详细检查数据库配置，可以参考这个文件/opt/bigops/install/lnmp\_conf/my-5.7.cnf。
+
+> curl 127.0.0.1:30001/signin/login
+
+![](/assets/checkloginstatus.png)
+
 ### 登录系统
 
 默认账号：admin
