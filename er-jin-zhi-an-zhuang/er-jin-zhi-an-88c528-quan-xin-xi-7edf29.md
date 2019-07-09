@@ -102,11 +102,11 @@ Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 
 登陆后请尽快修改密码
 
-### 启动bigserver，bigserver服务用于定时执行一些内置任务
+### 启动bigserver，bigserver服务用于执行一些内置任务
 
 > sh /opt/bigops/sbin/bigserver.sh restart
 
-### 设置清理日志
+### 设置定时清理日志
 
 > crontab -e
 >
