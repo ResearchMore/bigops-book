@@ -96,7 +96,21 @@
 
 ### 安装Nginx
 
+> yum -y install nginx
+>
+> mkdir /opt/ngxlog
+>
+> cp -f /opt/bigops/install/lnmp\_conf/nginx.conf /etc/nginx/nginx.conf
+>
+> cp -f /opt/bigops/install/lnmp\_conf/conf.d/default.conf /etc/nginx/conf.d/default.conf
+>
+> cp -f /opt/bigops/install/lnmp\_conf/conf.d/sso.conf /etc/nginx/conf.d/sso.conf
+>
+> cp -f /opt/bigops/install/lnmp\_conf/conf.d/work.conf /etc/nginx/conf.d/work.conf
+>
+> cp -f /opt/bigops/install/lnmp\_conf/conf.d/zabbix.conf /etc/nginx/conf.d/zabbix.conf
 
+修改sso.conf、work.conf、zabbix.conf里的域名为你网站的域名
 
 ### 设置配置文件
 
