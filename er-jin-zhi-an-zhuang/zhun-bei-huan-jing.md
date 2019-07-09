@@ -11,13 +11,17 @@
 
 2、work.xxxx.com，用于主站
 
-如果没有注册的域名，也可以设置hosts。
+如果你没有注册域名，需要给服务器和你的笔记本系统都配置hosts。
 
-服务器和你的pc电脑的hosts都需要设置，切记！切记！切记！！！
+Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 
-要不然就会出现这个问题
+配置内容例如：
+
+192.168.100.2 sso.bigops.com
+
+192.168.100.2 work.bigops.com
+
+切记设置！切记设置！切记设置！！！否则会报错
 
 ![](/assets/bug1.png)
-
-
 
