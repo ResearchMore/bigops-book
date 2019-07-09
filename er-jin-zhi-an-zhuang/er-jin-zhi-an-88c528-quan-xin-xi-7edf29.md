@@ -80,7 +80,37 @@ Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 >
 > 根据提示填写相关信息
 
-如果没有报错，即完成安装，1分钟后访问你配置的homeurl域名即可。登录界面如下
+如果没有报错，即完成安装。
 
-![](/assets/login.png)
+### **检查服务是否启动**
+
+> \# netstat -nptl\|egrep 3000
+>
+> tcp        0      0 127.0.0.1:30000             0.0.0.0:\*                   LISTEN      32346/java
+>
+> tcp        0      0 127.0.0.1:30001             0.0.0.0:\*                   LISTEN      32346/java
+>
+> tcp        0      0 127.0.0.1:30002             0.0.0.0:\*                   LISTEN      26830/java
+>
+> tcp        0      0 127.0.0.1:30003             0.0.0.0:\*                   LISTEN      26830/java
+
+### 登录系统
+
+默认账号：admin
+
+默认密码：bigops
+
+登陆后请尽快修改密码
+
+### 启动bigserver
+
+> sh /opt/bigops/sbin/bigserver.sh restart
+
+### 设置定时清理日志
+
+> crontab -e
+>
+> 00 01 \* \* \* /bin/sh /opt/bigops/bin/clean\_log.sh
+
+
 
