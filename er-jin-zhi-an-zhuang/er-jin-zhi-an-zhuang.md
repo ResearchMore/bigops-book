@@ -30,6 +30,8 @@
 
 [http://work.bigops.com/wizard/](http://work.bigops.com/wizard/)
 
+wizard启动会比较慢，因为第一次连接不上数据库，需要等一个连接MySQL的超时时间，大概1-2分钟可以启动好。
+
 ![](/assets/Xnip2019-05-20_16-05-02.jpg)
 
 # 登录系统
