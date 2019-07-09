@@ -3,7 +3,7 @@
 * [介绍](README.md)
 * [社区](she-qu.md)
 * [变更日志](changelog.md)
-* [快速安装](er-jin-zhi-an-zhuang.md)
+* [安装](er-jin-zhi-an-zhuang.md)
   * [全新系统安装](er-jin-zhi-an-zhuang/quan-xin-xi-tong-an-zhuang.md)
   * [准备环境](er-jin-zhi-an-zhuang/zhun-bei-huan-jing.md)
   * [二进制安装](er-jin-zhi-an-zhuang/er-jin-zhi-an-zhuang.md)

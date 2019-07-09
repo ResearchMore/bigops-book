@@ -78,3 +78,5 @@ Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 
 如果没有报错，即完成安装，1分钟后访问你配置的homeurl域名即可
 
+![](/assets/login.png)
+
