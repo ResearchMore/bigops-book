@@ -68,7 +68,7 @@ Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 
 192.168.100.2 work.bigops.com
 
-切记设置！切记设置！切记设置！！！否则会报错
+切记设置！切记设置！切记设置！！！否则会报如下错误
 
 ![](/assets/bug1.png)
 
