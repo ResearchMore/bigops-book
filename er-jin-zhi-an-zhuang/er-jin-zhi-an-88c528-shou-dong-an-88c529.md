@@ -14,9 +14,47 @@
 >
 > mv bigops-1.0.0 bigops
 
-### 检查运行环境
+### 安装MySQL，建议版本用5.7
 
-> sh /opt/bigops/bin/check\_env.sh
+> cp -f /opt/bigops/install/yum.repos.d/\* /etc/yum.repos.d/
+>
+> yum -y install mysql-community-server mysql-community-client mysql-community-devel mysql-community-libs-compat
+
+查看MySQL登录密码
+
+> egrep 'temporary password' /var/log/mysqld.log
+
+取消MySQL密码复杂度设置
+
+> set global validate\_password\_policy=0;
+>
+> set global validate\_password\_mixed\_case\_count=0;
+>
+> set global validate\_password\_number\_count=3;
+>
+> set global validate\_password\_special\_char\_count=0;
+>
+> set global validate\_password\_length=3;
+>
+> ALTER USER 'root'@'localhost' PASSWORD EXPIRE NEVER;
+>
+> flush privileges;
+
+修改root默认登录密码，your\_password为你的新密码
+
+> ALTER USER 'root'@'localhost' IDENTIFIED BY 'your\_password';
+
+优化MySQL
+
+> cp -f /opt/bigops/install/lnmp\_conf/my-5.7.cnf /etc/my.cnf
+>
+> 修改datadir=/var/lib/mysql为你的数据存储目录
+>
+> 修改innodb\_buffer\_pool\_size=3G为你的内存的60%
+
+最后重启MySQL
+
+> service mysqld restart
 
 ### 进入MySQL，创建数据库，建议MySQL版本为5.7
 
@@ -29,6 +67,12 @@
 > cd /opt/bigops/install/mysql/
 >
 > mysql -u _user -p bigops &lt; bigops-1.0.0.sql_
+
+### 检查运行环境
+
+> sh /opt/bigops/bin/check\_env.sh
+
+### 
 
 ### 修改配置文件
 

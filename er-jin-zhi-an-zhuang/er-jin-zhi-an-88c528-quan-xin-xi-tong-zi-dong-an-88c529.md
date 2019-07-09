@@ -14,7 +14,7 @@
 >
 > mv bigops-1.0.0 bigops
 
-### 安装MySQL
+### 安装MySQL，建议版本用5.7
 
 > cp -f /opt/bigops/install/yum.repos.d/\* /etc/yum.repos.d/
 >
