@@ -9,7 +9,7 @@
 
 sso.xxxx.com和work.xxxx.com
 
-如果没有注册的域名，也可以设置hosts，最好服务器和你的pc电脑hosts都设置一下
+如果没有注册的域名，也可以设置hosts，服务器和你的pc电脑hosts都需要设置
 
 # 软件仓库
 
