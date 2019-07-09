@@ -24,7 +24,7 @@
 
 > egrep 'temporary password' /var/log/mysqld.log
 
-取消MySQL密码复杂度设置
+登录MySQL，取消MySQL密码复杂度设置
 
 > set global validate\_password\_policy=0;
 >
