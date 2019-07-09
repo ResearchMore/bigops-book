@@ -86,6 +86,24 @@
 >
 > cp -f /opt/bigops/install/ansible.cfg /root/.ansible.cfg
 
+或者修改文件/etc/ansible/ansible.cfg
+
+> \[defaults\]
+>
+> inventory = /etc/ansible/hosts
+>
+> stdout =json
+>
+> host\_key\_checking= False
+>
+> deprecation\_warnings=False
+>
+> \[ssh\_connection\]
+>
+> scp\_if\_ssh=True
+>
+> ssh\_args = -o LogLevel=quiet -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
+
 ### 安装jq，json文件解析工具
 
 > cp  /usr/bin/jq /usr/bin/jqbak
