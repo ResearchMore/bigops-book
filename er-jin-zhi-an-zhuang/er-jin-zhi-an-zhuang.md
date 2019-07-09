@@ -14,6 +14,16 @@
 
 > sh /opt/bigops/bin/check\_env.sh
 
+
+
+### 关闭SElinux
+
+> vi  /etc/sysconfig/selinux 
+>
+> SELINUX=disabled
+
+
+
 ### 启动「安装向导」
 
 > sh /opt/bigops/bin/start.sh
