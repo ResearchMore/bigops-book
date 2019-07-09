@@ -58,9 +58,11 @@
 
 ### 运行安装文件
 
-> wget -O /opt/bigops/install/newos\_install.sh https://raw.githubusercontent.com/yunweibang/bigops-install/master/newos\_install.sh
+> wget -O /opt/bigops/install/newos\_install.sh [https://raw.githubusercontent.com/yunweibang/bigops-install/master/newos\_install.sh](https://raw.githubusercontent.com/yunweibang/bigops-install/master/newos_install.sh)
 >
 > sh /opt/bigops/install/newos\_install.sh
+>
+> 根据提示填写相关信息
 
 如果没有报错，即完成安装，1分钟后访问你配置的homeurl域名即可
 
