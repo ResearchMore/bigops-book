@@ -68,6 +68,10 @@ Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 
 192.168.100.2 work.bigops.com
 
+切记设置！切记设置！切记设置！！！否则会报错
+
+![](/assets/bug1.png)
+
 ### 运行安装文件
 
 > wget -O /opt/bigops/install/newos\_install.sh [https://raw.githubusercontent.com/yunweibang/bigops-install/master/newos\_install.sh](https://raw.githubusercontent.com/yunweibang/bigops-install/master/newos_install.sh)
