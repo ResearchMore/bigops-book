@@ -45,6 +45,8 @@
 > sh /opt/bigops/bin/check\_env.sh
 >
 > sh /opt/bigops/bin/restart.sh
+>
+> sh /opt/bigops/sbin/bigserver.sh restart
 
 ### **检查服务是否启动**
 
