@@ -1,6 +1,10 @@
-### **下载文件到/opt目录**
+### 进QQ群获取安装软件
 
-[http://www.bigops.com/dl.html](http://www.bigops.com/dl.html)
+* QQ一群：1027031676
+
+* QQ二群：建设中
+
+入群暗号：BigOps
 
 ### **解压文件**
 
@@ -13,14 +17,6 @@
 ### 检查运行环境
 
 > sh /opt/bigops/bin/check\_env.sh
-
-### 关闭SElinux
-
-> vi  /etc/sysconfig/selinux
->
-> SELINUX=disabled
->
-> 需要重启系统
 
 ### 进入MySQL，创建数据库，建议MySQL版本为5.7
 

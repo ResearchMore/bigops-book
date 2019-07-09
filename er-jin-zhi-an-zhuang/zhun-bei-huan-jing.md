@@ -23,5 +23,13 @@ Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 
 切记设置！切记设置！切记设置！！！否则会报错
 
-![](/assets/bug1.png)
+# ![](/assets/bug1.png) 关闭SElinux
+
+> vi /etc/sysconfig/selinux
+>
+> SELINUX=disabled
+>
+> 需要重启系统
+
+
 
