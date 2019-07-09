@@ -14,15 +14,11 @@
 
 > sh /opt/bigops/bin/check\_env.sh
 
-
-
 ### 关闭SElinux
 
-> vi  /etc/sysconfig/selinux 
+> vi  /etc/sysconfig/selinux
 >
 > SELINUX=disabled
-
-
 
 ### 启动「安装向导」
 
@@ -35,6 +31,12 @@
 > tcp6       0      0 127.0.0.1:30002         :::\*                    LISTEN      2710/java
 >
 > tcp6       0      0 127.0.0.1:30003         :::\*                    LISTEN      2710/java
+
+### 需要2个域名
+
+sso.xxxx.com和work.xxxx.com
+
+如果没有注册，也可以设置hosts，最好服务器和你的pc都设置一下
 
 ### 确认Nginx、MySQL安装正确，**访问安装向导，根据提示进行操作**
 
