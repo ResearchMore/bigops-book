@@ -8,9 +8,13 @@
   * [二进制安装](er-jin-zhi-an-zhuang/er-jin-zhi-an-zhuang.md)
   * [源代码安装](er-jin-zhi-an-zhuang/yuan-dai-ma-an-zhuang.md)
 * [使用手册](shi-yong-shou-ce.md)
-  * [登录系统](shi-yong-shou-ce/deng-lu-xi-tong.md)
-  * [创建服务](shi-yong-shou-ce/fu-wu-shu-chuang-jian-fu-wu.md)
-  * [模型与实例](shi-yong-shou-ce/mo-xing-yu-shi-li.md)
+  * 多云导入
+  * 自动发现
+  * IPAM
+  * [资源](shi-yong-shou-ce/zi-yuan.md)
+    * [服务树](shi-yong-shou-ce/zi-yuan/fu-wu-shu.md)
+    * [模型和实例](shi-yong-shou-ce/zi-yuan/mo-xing-he-shi-li.md)
+* [登录系统](shi-yong-shou-ce/deng-lu-xi-tong.md)
 * [接入SSO](jie-ru-sso.md)
 * [API](api.md)
 * [客户案例](ke-hu-an-li.md)
