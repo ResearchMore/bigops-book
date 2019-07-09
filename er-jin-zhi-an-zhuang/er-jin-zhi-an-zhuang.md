@@ -22,11 +22,25 @@
 >
 > 需要重启系统
 
-### 启动「安装向导」
+### 进入MySQL，创建数据库
 
-> sh /opt/bigops/bin/start.sh
+> mysql&gt;create database bigops;
+>
+> mysql&gt;exit
 
-向导启动会比较慢，因为第一次连接不上数据库，需要等一个连接MySQL的超时时间，大概1-2分钟可以启动好。
+### 导入数据
+
+> cd /opt/bigops/install/mysql/
+>
+> mysql -u _user -p bigops &lt; bigops-1.0.0.sql_
+
+### 修改配置文件
+
+> cd /opt/bigops/config/
+>
+> vi bigops.properties
+
+![](/assets/config.png)
 
 ### **检查BigOps Tomcat服务是否启动**
 
@@ -39,12 +53,6 @@
 > tcp        0      0 127.0.0.1:30002             0.0.0.0:\*                   LISTEN      26830/java
 >
 > tcp        0      0 127.0.0.1:30003             0.0.0.0:\*                   LISTEN      26830/java
-
-### 确认Nginx、MySQL安装正确，**访问安装向导，根据提示进行操作**
-
-[http://work.bigops.com/wizard/](http://work.bigops.com/wizard/)
-
-![](/assets/Xnip2019-05-20_16-05-02.jpg)
 
 # 登录系统
 
