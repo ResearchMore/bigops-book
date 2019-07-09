@@ -36,13 +36,17 @@
 
 ### 修改配置文件
 
-> cd /opt/bigops/config/
->
-> vi bigops.properties
+> vi /opt/bigops/config/bigops.properties
 
 ![](/assets/config.png)
 
-### **检查BigOps Tomcat服务是否启动**
+### 检查运行环境并启动服务
+
+> sh /opt/bigops/bin/check\_env.sh
+>
+> sh /opt/bigops/bin/restart.sh
+
+### **检查服务是否启动**
 
 > \# netstat -nptl\|egrep 3000
 >
@@ -54,13 +58,13 @@
 >
 > tcp        0      0 127.0.0.1:30003             0.0.0.0:\*                   LISTEN      26830/java
 
-# 登录系统
+### 登录系统
 
 默认账号：admin
 
 默认密码：bigops
 
-# 定时清理日志
+### 设置定时清理日志
 
 > crontab -e
 >
