@@ -5,6 +5,12 @@
 * CentOS 6 x86 64位
 * CentOS 7 x86 64位
 
+# 需要2个域名
+
+sso.xxxx.com和work.xxxx.com
+
+如果没有注册的域名，也可以设置hosts，最好服务器和你的pc电脑都设置一下
+
 # 软件仓库
 
 ### epel仓库、remi仓库

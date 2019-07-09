@@ -40,12 +40,6 @@
 >
 > tcp        0      0 127.0.0.1:30003             0.0.0.0:\*                   LISTEN      26830/java
 
-### 需要2个域名
-
-sso.xxxx.com和work.xxxx.com
-
-如果没有注册的域名，也可以设置hosts，最好服务器和你的pc电脑都设置一下
-
 ### 确认Nginx、MySQL安装正确，**访问安装向导，根据提示进行操作**
 
 [http://work.bigops.com/wizard/](http://work.bigops.com/wizard/)
