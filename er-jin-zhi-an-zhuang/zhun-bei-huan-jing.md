@@ -7,7 +7,9 @@
 
 # 需要2个域名
 
-sso.xxxx.com和work.xxxx.com
+1、sso.xxxx.com，用于同一认证
+
+2、work.xxxx.com，用于核心项目
 
 如果没有注册的域名，也可以设置hosts，服务器和你的pc电脑hosts都需要设置
 
@@ -41,19 +43,15 @@ sso.xxxx.com和work.xxxx.com
 >
 > mkdir /opt/ngxlog/
 
-**MySQL，建议版本为5.7或5.8，如果已安装就忽略。也可以安装其他MySQL发行版。**
+**MySQL，建议版本为5.7，如果已安装就忽略。也可以安装其他MySQL发行版。**
 
 > yum -y install mysql-community-server mysql-community-client mysql-community-devel
 
 **Medusa，检查密码正确性工具。**
 
-> yum -y install medusa libssh2
->
-> 源码安装
->
 > yum -y install libssh2
 >
-> wget -c [http://foofus.net/goons/jmk/tools/medusa-2.2.tar.gz](http://foofus.net/goons/jmk/tools/medusa-2.2.tar.gz)
+> cd /opt/bigops/soft/
 >
 > tar zxvf medusa-2.2.tar.gz
 >
