@@ -32,6 +32,12 @@
 
 ![](/assets/Xnip2019-05-20_16-05-02.jpg)
 
+# 登录系统
+
+默认账号：admin
+
+默认密码：bigops
+
 # 定时清理日志
 
 > crontab -e
