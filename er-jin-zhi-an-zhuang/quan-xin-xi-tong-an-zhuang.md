@@ -56,6 +56,18 @@
 
 > service mysqld restart
 
+### 配置hosts文件
+
+如果你没有注册域名，需要给服务器和你的笔记本系统都配置hosts。
+
+Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
+
+配置内容例如：
+
+192.168.100.2 sso.bigops.com
+
+192.168.100.2 work.bigops.com
+
 ### 运行安装文件
 
 > wget -O /opt/bigops/install/newos\_install.sh [https://raw.githubusercontent.com/yunweibang/bigops-install/master/newos\_install.sh](https://raw.githubusercontent.com/yunweibang/bigops-install/master/newos_install.sh)
