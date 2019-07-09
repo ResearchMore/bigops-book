@@ -62,7 +62,7 @@
 
 Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 
-配置内容例如：
+配置内容如下，IP改成你自己服务器的
 
 192.168.100.2 sso.bigops.com
 
