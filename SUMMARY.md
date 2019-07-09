@@ -9,6 +9,8 @@
   * [源代码安装](er-jin-zhi-an-zhuang/yuan-dai-ma-an-zhuang.md)
 * [使用手册](shi-yong-shou-ce.md)
   * [资源](shi-yong-shou-ce/zi-yuan.md)
+    * [我的主机](shi-yong-shou-ce/zi-yuan/wo-de-zhu-ji.md)
+    * [部门主机](shi-yong-shou-ce/zi-yuan/bu-men-zhu-ji.md)
     * [资源](shi-yong-shou-ce/zi-yuan/zi-yuan.md)
       * [模型实例](shi-yong-shou-ce/zi-yuan/zi-yuan/mo-xing-shi-li.md)
       * 变更日志
@@ -16,8 +18,10 @@
       * 自动发现
       * IPAM
       * 硬件绑定主机
-  * [特殊控件](shi-yong-shou-ce/te-shu-kong-jian.md)
-    * [服务树](shi-yong-shou-ce/te-shu-kong-jian/fu-wu-shu.md)
+    * [特殊控件](shi-yong-shou-ce/zi-yuan/te-shu-kong-jian.md)
+      * [服务树](shi-yong-shou-ce/zi-yuan/te-shu-kong-jian/fu-wu-shu.md)
+  * 会话
+  * 用户
 * [登录系统](shi-yong-shou-ce/deng-lu-xi-tong.md)
 * [接入SSO](jie-ru-sso.md)
 * [API](api.md)
