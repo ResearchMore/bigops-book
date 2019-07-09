@@ -118,13 +118,13 @@
 
 ![](/assets/config.png)
 
-### 检查运行环境并启动服务
+### 检查运行环境并启动网站服务
 
 > \#检查环境
 >
 > sh /opt/bigops/bin/check\_env.sh
 >
-> \#启动网站
+> \#启动网站服务
 >
 > sh /opt/bigops/bin/restart.sh
 
