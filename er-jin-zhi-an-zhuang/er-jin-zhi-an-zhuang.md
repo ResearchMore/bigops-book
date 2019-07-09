@@ -19,6 +19,8 @@
 > vi  /etc/sysconfig/selinux
 >
 > SELINUX=disabled
+>
+> 需要重启系统
 
 ### 启动「安装向导」
 
@@ -28,11 +30,11 @@
 
 > \# netstat -nptl\|egrep 3000
 >
-> tcp        0      0 127.0.0.1:30000             0.0.0.0:\*                   LISTEN      32346/java          
+> tcp        0      0 127.0.0.1:30000             0.0.0.0:\*                   LISTEN      32346/java
 >
-> tcp        0      0 127.0.0.1:30001             0.0.0.0:\*                   LISTEN      32346/java          
+> tcp        0      0 127.0.0.1:30001             0.0.0.0:\*                   LISTEN      32346/java
 >
-> tcp        0      0 127.0.0.1:30002             0.0.0.0:\*                   LISTEN      26830/java          
+> tcp        0      0 127.0.0.1:30002             0.0.0.0:\*                   LISTEN      26830/java
 >
 > tcp        0      0 127.0.0.1:30003             0.0.0.0:\*                   LISTEN      26830/java
 
