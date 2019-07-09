@@ -1,4 +1,4 @@
-### 进QQ群获取安装软件
+进QQ群获取安装软件
 
 * QQ一群：1027031676
 
@@ -88,9 +88,7 @@ Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 
 192.168.100.2 work.bigops.com
 
-切记设置！切记设置！切记设置！！！否则会报如下错误
-
-![](/assets/bug1.png)
+切记设置！切记设置！切记设置！！！
 
 ### 运行安装文件
 

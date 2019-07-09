@@ -134,6 +134,20 @@ StrictHostKeyChecking no
 
 修改sso.conf、work.conf、zabbix.conf里的域名为你网站的域名
 
+### 配置hosts文件
+
+如果你没有注册域名，需要给服务器和你的笔记本系统都配置hosts。
+
+Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
+
+配置内容如下，IP改成你自己服务器的
+
+192.168.100.2 sso.bigops.com
+
+192.168.100.2 work.bigops.com
+
+切记设置！切记设置！切记设置！！！
+
 ### 设置配置文件
 
 > vi /opt/bigops/config/bigops.properties
