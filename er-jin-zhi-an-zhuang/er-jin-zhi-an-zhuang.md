@@ -26,17 +26,21 @@
 
 ### **检查BigOps Tomcat服务是否启动**
 
-> \# netstat -nptl\|egrep '30002\|30003'
+> \# netstat -nptl\|egrep 3000
 >
-> tcp6       0      0 127.0.0.1:30002         :::\*                    LISTEN      2710/java
+> tcp        0      0 127.0.0.1:30000             0.0.0.0:\*                   LISTEN      32346/java          
 >
-> tcp6       0      0 127.0.0.1:30003         :::\*                    LISTEN      2710/java
+> tcp        0      0 127.0.0.1:30001             0.0.0.0:\*                   LISTEN      32346/java          
+>
+> tcp        0      0 127.0.0.1:30002             0.0.0.0:\*                   LISTEN      26830/java          
+>
+> tcp        0      0 127.0.0.1:30003             0.0.0.0:\*                   LISTEN      26830/java
 
 ### 需要2个域名
 
 sso.xxxx.com和work.xxxx.com
 
-如果没有注册，也可以设置hosts，最好服务器和你的pc都设置一下
+如果没有注册的域名，也可以设置hosts，最好服务器和你的pc电脑都设置一下
 
 ### 确认Nginx、MySQL安装正确，**访问安装向导，根据提示进行操作**
 
