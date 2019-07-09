@@ -97,10 +97,6 @@ Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 > sh /opt/bigops/install/newos\_install.sh
 >
 > 根据提示填写相关信息，如果没有报错即安装正确。
->
-> 最后重启服务
->
-> sh /opt/bigops/bin/restart.sh
 
 ### **检查服务是否启动**
 
