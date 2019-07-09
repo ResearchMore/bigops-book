@@ -9,7 +9,7 @@
 
 1、sso.xxxx.com，用于同一认证
 
-2、work.xxxx.com，用于核心项目
+2、work.xxxx.com，用于主站
 
 如果没有注册的域名，也可以设置hosts，服务器和你的pc电脑hosts都需要设置
 
