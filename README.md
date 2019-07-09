@@ -2,6 +2,18 @@
 
 [中文文档1.0](http://docs.bigops.com)
 
+# 开发语言
+
+前端采用iview+VUE
+
+后端采用JAVA
+
+数据库采用MySQL
+
+插件Shell、Python、go都可以，无限制
+
+配置管理采用Ansible
+
 # 功能特点
 
 ### 统一运维门户
