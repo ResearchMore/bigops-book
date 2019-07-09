@@ -20,8 +20,28 @@
       * 硬件绑定主机
     * [特殊控件](shi-yong-shou-ce/zi-yuan/te-shu-kong-jian.md)
       * [服务树](shi-yong-shou-ce/zi-yuan/te-shu-kong-jian/fu-wu-shu.md)
-  * 会话
-  * 用户
+    * 会话
+    * 用户
+  * [监控](shi-yong-shou-ce/jian-kong.md)
+    * [视图](shi-yong-shou-ce/jian-kong/shi-tu.md)
+      * 服务树视图
+      * 主机组视图
+    * 大屏
+    * 绑定主机
+    * 设置
+  * [hostmin](shi-yong-shou-ce/hostmin.md)
+    * 运行状态
+    * 系统管理
+    * 系统备份
+  * [堡垒机](shi-yong-shou-ce/bao-lei-ji.md)
+    * 我的会话
+    * 我的公钥
+    * 会话
+    * 设置
+  * 消息
+  * 工单
+  * 偏好
+  * 总后台
 * [登录系统](shi-yong-shou-ce/deng-lu-xi-tong.md)
 * [接入SSO](jie-ru-sso.md)
 * [API](api.md)
