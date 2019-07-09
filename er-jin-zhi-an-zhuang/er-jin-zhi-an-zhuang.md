@@ -42,9 +42,15 @@
 
 ### 检查运行环境并启动服务
 
+> \#检查环境
+>
 > sh /opt/bigops/bin/check\_env.sh
 >
+> \#启动主站web
+>
 > sh /opt/bigops/bin/restart.sh
+>
+> \#启动bigserver
 >
 > sh /opt/bigops/sbin/bigserver.sh restart
 
