@@ -58,6 +58,8 @@
 
 ### 运行安装文件
 
+> wget -O /opt/bigops/install/newos\_install.sh [https://raw.githubusercontent.com/yunweibang/bigops-install/master/newos\_install.sh](https://raw.githubusercontent.com/yunweibang/bigops-install/master/newos_install.sh)
+>
 > sh /opt/bigops/install/newos\_install.sh
 
 
