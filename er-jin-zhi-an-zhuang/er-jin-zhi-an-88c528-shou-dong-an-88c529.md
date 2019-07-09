@@ -56,11 +56,9 @@
 
 > service mysqld restart
 
-### 进入MySQL，创建数据库，建议MySQL版本为5.7
+### 进入MySQL，创建数据库
 
 > mysql&gt;create database bigops;
->
-> mysql&gt;exit
 
 ### 导入数据
 
@@ -68,13 +66,7 @@
 >
 > mysql -u _user -p bigops &lt; bigops-1.0.0.sql_
 
-### 检查运行环境
-
-> sh /opt/bigops/bin/check\_env.sh
-
-### 
-
-### 修改配置文件
+### 设置配置文件
 
 > vi /opt/bigops/config/bigops.properties
 
@@ -86,13 +78,9 @@
 >
 > sh /opt/bigops/bin/check\_env.sh
 >
-> \#启动主站web
+> \#启动网站
 >
 > sh /opt/bigops/bin/restart.sh
->
-> \#启动bigserver
->
-> sh /opt/bigops/sbin/bigserver.sh restart
 
 ### **检查服务是否启动**
 
@@ -111,6 +99,12 @@
 默认账号：admin
 
 默认密码：bigops
+
+登陆后请尽快修改密码
+
+### 启动bigserver，bigserver服务用于执行一些内置任务
+
+> sh /opt/bigops/sbin/bigserver.sh restart
 
 ### 设置定时清理日志
 
