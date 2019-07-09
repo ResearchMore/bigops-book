@@ -83,11 +83,11 @@
 ### 安装Ansible，配置管理工具
 
 > yum -y install ansible
+>
+> cp -f /opt/bigops/install/ansible.cfg /root/.ansible.cfg
 
 ### 安装jq，json文件解析工具
 
-> cp -f /opt/bigops/install/ansible.cfg /root/.ansible.cfg
->
 > cp  /usr/bin/jq /usr/bin/jqbak
 >
 > cp -f /opt/bigops/install/soft/jq-linux64 /usr/bin/jq
