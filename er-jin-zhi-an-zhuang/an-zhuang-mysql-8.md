@@ -34,7 +34,7 @@ centos 6启动命令
 >
 > 如果启动失败，有可能/var/lib/mysql/有以前的残留文件，需要删除。
 >
-> 也可以用命令mysqld --initialize-insecure重新初始化数据库。
+> 也可以用命令mysqld --initialize-insecure重新初始化数据库，需要basedir目录为空。
 
 centos 7启动命令
 
