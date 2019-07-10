@@ -68,7 +68,7 @@
 
 ### 安装Medusa，一个密码检查工具
 
-> yum -y install libssh2
+> yum -y install libssh2 openssl openssl-libs openssl-devel
 >
 > cd /opt/bigops/install/soft/
 >
