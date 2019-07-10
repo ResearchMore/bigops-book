@@ -110,6 +110,8 @@ bigserver配置文件在
 
 可以根据需要调整轮询时间
 
+![](/assets/bigserver.png)
+
 ### 设置定时清理日志
 
 > crontab -e
