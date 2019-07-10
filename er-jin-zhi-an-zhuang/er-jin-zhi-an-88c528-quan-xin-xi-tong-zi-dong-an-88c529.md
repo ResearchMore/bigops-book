@@ -14,11 +14,11 @@
 >
 > mv bigops-1.0.0 bigops
 
-### 安装MySQL 5.7或5.8，参考
+### 安装MySQL 8或5.7，参考
 
-[安装MySQL 5.7](/er-jin-zhi-an-zhuang/an-zhuang-mysql-5-7.md)  点我
+[安装MySQL 8](#)   点我
 
-[安装MySQL 5.8](/er-jin-zhi-an-zhuang/an-zhuang-mysql-5-8.md)  点我
+[安装MySQL 5.7](/er-jin-zhi-an-zhuang/an-zhuang-mysql-5-7.md)   点我
 
 ### 配置Ansible
 

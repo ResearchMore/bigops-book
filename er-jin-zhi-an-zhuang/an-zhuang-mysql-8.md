@@ -82,7 +82,7 @@ centos 7启动命令
 
 优化MySQL
 
-> cp -f /opt/bigops/install/lnmp\_conf/my-5.8.cnf /etc/my.cnf
+> cp -f /opt/bigops/install/lnmp\_conf/my-8.cnf /etc/my.cnf
 >
 > 修改datadir=/var/lib/mysql为你的数据存储目录，这个目录需要给mysql用户属主权限chown -R mysql:mysql xxxxxxxxxx
 >
