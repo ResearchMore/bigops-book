@@ -16,45 +16,7 @@
 
 ### 安装MySQL，建议版本用5.7
 
-> cp -f /opt/bigops/install/yum.repos.d/\* /etc/yum.repos.d/
->
-> yum -y install mysql-community-server mysql-community-client mysql-community-devel mysql-community-libs-compat
-
-查看MySQL登录密码
-
-> egrep 'temporary password' /var/log/mysqld.log
-
-取消MySQL密码复杂度设置
-
-> set global validate\_password\_policy=0;
->
-> set global validate\_password\_mixed\_case\_count=0;
->
-> set global validate\_password\_number\_count=3;
->
-> set global validate\_password\_special\_char\_count=0;
->
-> set global validate\_password\_length=3;
->
-> ALTER USER 'root'@'localhost' PASSWORD EXPIRE NEVER;
->
-> flush privileges;
-
-修改root默认登录密码，your\_password为你的新密码
-
-> ALTER USER 'root'@'localhost' IDENTIFIED BY 'your\_password';
-
-优化MySQL
-
-> cp -f /opt/bigops/install/lnmp\_conf/my-5.7.cnf /etc/my.cnf
->
-> 修改datadir=/var/lib/mysql为你的数据存储目录
->
-> 修改innodb\_buffer\_pool\_size=3G为你的内存的60%
-
-最后重启MySQL
-
-> service mysqld restart
+[安装MySQL 5.7](/er-jin-zhi-an-zhuang/an-zhuang-mysql-5-7.md)    点我
 
 ### 进入MySQL，创建数据库
 
@@ -166,17 +128,15 @@ Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 
 ![](/assets/config.png)
 
-### 检查运行环境并启动网站服务
+### 检查数据库是否创建成功
 
-> \#检查环境
->
-> sh /opt/bigops/bin/check\_env.sh
->
-> \#启动网站服务
->
-> sh /opt/bigops/bin/restart.sh
+用你填写的host、port、user、pass登录MySQL
 
-### **检查服务是否启动**
+mysql -h host -u user -p
+
+mysql&gt; show databases bigops;
+
+### **检查服务端口是否启动**
 
 > \# netstat -nptl\|egrep 3000
 >
@@ -188,23 +148,45 @@ Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 >
 > tcp        0      0 127.0.0.1:30003             0.0.0.0:\*                   LISTEN      26830/java
 
-运行下面命令，如果返回值包括「sso系统正常」，说明运行正常，如果没有返回值说明有问题，需要详细检查数据库配置，可以参考这个文件/opt/bigops/install/lnmp\_conf/my-5.7.cnf。
+### 验证sso服务是否正常
 
 > curl 127.0.0.1:30001/signin/login
 
 ![](/assets/checkloginstatus.png)
 
+如果返回值包括「sso系统正常」，说明运行正常，如果没有返回值说明有问题，需要详细检查数据库配置，可以参考这个文件/opt/bigops/install/lnmp\_conf/my-5.7.cnf。
+
+### 验证work服务是否正常
+
+> curl 127.0.0.1:30003/api/common/ssourl/
+
+### ![](/assets/checkwork.png)
+
+如果返回message为ok就是正常
+
+### 启动Nginx
+
+> service nginx restart
+
 ### 登录系统
+
+域名：[http://work.bigops.com](http://work.bigops.com)  \(就是你刚才设置的homeurl\)
 
 默认账号：admin
 
 默认密码：bigops
 
-登陆后请尽快修改密码
+登陆后请尽快修改密码。
 
 ### 启动bigserver，bigserver服务用于执行一些内置任务
 
 > sh /opt/bigops/sbin/bigserver.sh restart
+
+bigserver配置文件在/opt/bigops/sbin/bigserver.properties
+
+可以根据需要调整轮询时间
+
+![](/assets/bigserversetting.png)
 
 ### 设置定时清理日志
 
