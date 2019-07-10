@@ -50,9 +50,15 @@ MySQL 5.8取消密码复杂度及更新密码
 >
 > ALTER USER 'root'@'localhost' IDENTIFIED BY 'your\_password' PASSWORD EXPIRE NEVER;
 >
+> create user 'root'@'127.0.0.1' identified by 'your\_password';
+>
+> ALTER USER 'root'@'127.0.0.1' IDENTIFIED BY 'your\_password' PASSWORD EXPIRE NEVER;
+>
 > \#更新密码
 >
 > ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql\_native\_password BY 'your\_password';
+>
+> ALTER USER 'root'@'127.0.0.1' IDENTIFIED WITH mysql\_native\_password BY 'your\_password';
 >
 > flush privileges;
 

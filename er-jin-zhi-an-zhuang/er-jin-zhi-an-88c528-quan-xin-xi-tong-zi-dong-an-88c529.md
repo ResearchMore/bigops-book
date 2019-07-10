@@ -61,6 +61,8 @@ Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 > sh /opt/bigops/install/newos\_install.sh
 >
 > 根据提示填写相关信息，设置完后系统会自动启动。
+>
+> dbhost不要填localhost，填127.0.0.1或对应IP
 
 ![](/assets/install_setting.png)
 
