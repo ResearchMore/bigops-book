@@ -92,6 +92,10 @@ mysql&gt; show databases bigops;
 
 ![](/assets/checkloginstatus.png)
 
+### 启动Nginx
+
+service nginx restart
+
 ### 登录系统
 
 域名：[http://work.bigops.com](http://work.bigops.com)  \(就是你刚才设置的homeurl\)
