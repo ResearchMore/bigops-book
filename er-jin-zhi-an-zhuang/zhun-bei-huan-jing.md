@@ -31,7 +31,11 @@ Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 >
 > 需要重启系统
 
+### 关闭iptables，或者添加对于80端口
 
+> chkconfig --level 345 iptables off
+>
+> service iptables stop
 
 ### 优化操作系统
 
