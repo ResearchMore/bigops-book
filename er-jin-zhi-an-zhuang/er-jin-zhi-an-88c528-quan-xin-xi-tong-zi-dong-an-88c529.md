@@ -16,9 +16,21 @@
 
 ### 安装MySQL 5.7，其他版本类似
 
+添加安装源并安装
+
 > cp -f /opt/bigops/install/yum.repos.d/\* /etc/yum.repos.d/
 >
 > yum -y install mysql-community-server mysql-community-client mysql-community-devel mysql-community-libs-compat
+
+启动数据库
+
+> centos 6启动
+>
+> service mysqld start
+>
+> cent 7启动
+>
+> systemctl start  mysqld.service
 
 查看MySQL登录密码
 
