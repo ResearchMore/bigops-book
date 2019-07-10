@@ -55,7 +55,7 @@ centos 7
 >
 > systemctl stop iptables
 >
-> systemctl disable firewalld.service
+> systemctl disable firewalld
 >
 > systemctl stop firewalld
 
