@@ -40,11 +40,11 @@ MySQL 5.8取消密码复杂度及更新密码
 >
 > set global validate\_password.mixed\_case\_count=0;
 >
-> set global validate\_password.number\_count=3;
+> set global validate\_password.number\_count=0;
 >
 > set global validate\_password.special\_char\_count=0;
 >
-> set global validate\_password.length=6
+> set global validate\_password.length=6;
 >
 > \#修改过期规则
 >

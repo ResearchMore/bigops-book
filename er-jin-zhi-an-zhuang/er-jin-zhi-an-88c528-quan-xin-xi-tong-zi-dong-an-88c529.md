@@ -62,6 +62,8 @@ Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 >
 > 根据提示填写相关信息，设置完后系统会自动启动。
 
+![](/assets/install_setting.png)
+
 ### **检查服务是否启动**
 
 > \# netstat -nptl\|egrep 3000

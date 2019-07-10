@@ -40,7 +40,7 @@ MySQL 5.7取消密码复杂度及更新密码
 >
 > set global validate\_password\_mixed\_case\_count=0;
 >
-> set global validate\_password\_number\_count=3;
+> set global validate\_password\_number\_count=0;
 >
 > set global validate\_password\_special\_char\_count=0;
 >
