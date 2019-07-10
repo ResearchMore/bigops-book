@@ -14,7 +14,7 @@
 >
 > mv bigops-1.0.0 bigops
 
-### 安装MySQL，建议版本用5.7
+### 安装MySQL 5.7，其他版本类似
 
 > cp -f /opt/bigops/install/yum.repos.d/\* /etc/yum.repos.d/
 >
@@ -55,6 +55,8 @@
 最后重启MySQL
 
 > service mysqld restart
+
+注意：非MySQL 5.7版本请参考/opt/bigops/install/lnmp\_conf/my-5.7.cnf进行对应优化
 
 ### 配置Ansible
 
