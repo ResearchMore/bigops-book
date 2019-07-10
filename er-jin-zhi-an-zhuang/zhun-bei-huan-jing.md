@@ -25,9 +25,19 @@ Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 
 ### ![](/assets/bug1.png) 关闭SElinux
 
+查看状态
+
+> getenforce
+
+临时关闭
+
+> setenforce 0
+
+永久关闭
+
 > vi /etc/sysconfig/selinux
 >
-> SELINUX=disabled
+> 将SELINUX=enforcing改为SELINUX=disabled
 >
 > 需要重启系统
 
