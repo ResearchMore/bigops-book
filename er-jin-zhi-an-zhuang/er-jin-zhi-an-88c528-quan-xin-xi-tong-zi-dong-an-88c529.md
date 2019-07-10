@@ -64,7 +64,7 @@ Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 >
 > dbhost不要填localhost，填127.0.0.1或对应IP
 
-![](/assets/install_setting.png)
+![](/assets/setting.png)
 
 ### 检查指定的数据库是否创建成功
 
@@ -72,7 +72,7 @@ Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 
 mysql -h host -u user -p
 
-mysql&gt; show databases bigops; 
+mysql&gt; show databases bigops;
 
 ### **检查服务是否启动**
 
