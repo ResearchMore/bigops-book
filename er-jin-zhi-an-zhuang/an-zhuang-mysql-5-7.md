@@ -1,44 +1,4 @@
-## 安装MySQL 5.7
-
-### 脚本自动安装
-
-上传mysqlrpm.tar.gz安装包到/opt/bigops/install/soft/下，安装包请进QQ群索取
-
-下载安装脚本
-
-> wget -O /opt/bigops/install/mysql\_install.sh
-
-设置安装参数，vi /opt/bigops/install/mysql\_install.sh
-
-> mysqlver=5.7  \#不需要修改
->
-> basedir=/opt/mysql   \#不用改，也可以根据自己的规划设置
->
-> buffer\_pool\_size=2G  \#根据当前系统内存的60%设置
->
-> \#下面三个值需要记住，安装bigops项目时需要用到
->
-> mysql\_user=root  \#初始化一个新的MySQL用户
->
-> mysql\_host=127.0.0.1  \#新MySQL用户host
->
-> mysql\_pass=bigops   \#新MySQL用户密码
-
-清空basedir，例如你的basedir是/opt/mysql
-
-> rm -rf /opt/mysql/\*
-
-运行安装脚本
-
-> sh /opt/bigops/install/mysql\_install.sh
-
-如果出现红框里的「Starting mysqld: ok 」，代表安装成功。默认root@localhost用户密码为空，建议设置一下。
-
-![](/assets/installmysql.png)
-
-
-
-### 手动安装
+### 安装MySQL 5.7
 
 添加安装源
 
@@ -72,7 +32,9 @@ centos 6启动命令
 >
 > service mysqld start
 >
-> 如果启动失败，有可能/var/lib/mysql/有以前的残留文件，需要删除
+> 如果启动失败，有可能/var/lib/mysql/有以前的残留文件，需要删除。
+>
+> 也可以用命令mysqld --initialize-insecure重新初始化数据库。
 
 centos 7启动命令
 
