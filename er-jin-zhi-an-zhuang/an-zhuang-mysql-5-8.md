@@ -46,7 +46,13 @@ MySQL 5.8取消密码复杂度及更新密码
 >
 > set global validate\_password.length=6;
 >
-> \#添加用户并修改过期规则
+> \#修改root@localhost密码
+>
+> ALTER USER 'root'@'localhost' IDENTIFIED BY 'your\_password' PASSWORD EXPIRE NEVER
+>
+> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql\_native\_password BY 'your\_password';
+>
+> \#添加用户root@127.0.0.1
 >
 > create user 'root'@'127.0.0.1' identified by 'your\_password';
 >
