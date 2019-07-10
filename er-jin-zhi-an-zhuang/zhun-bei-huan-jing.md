@@ -41,11 +41,23 @@ Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 >
 > 需要重启系统
 
-### 关闭iptables，或者添加对于80端口
+### 关闭防火墙，或者添加端口80端口
+
+centos 6
 
 > chkconfig --level 345 iptables off
 >
 > service iptables stop
+
+centos 7
+
+> systemctl disable iptables
+>
+> systemctl stop iptables
+>
+> systemctl disable firewalld.service
+>
+> systemctl stop firewalld
 
 ### 优化操作系统
 
