@@ -66,7 +66,7 @@ Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 
 ![](/assets/setting.png)
 
-### 检查指定的数据库是否创建成功
+### 检查数据库是否创建成功
 
 用你填写的host、port、user、pass登录MySQL
 
