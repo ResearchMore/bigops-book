@@ -108,7 +108,7 @@ MySQL 5.8取消密码复杂度及更新密码
 
 > service mysqld restart
 
-注意：非MySQL 5.7版本请参考/opt/bigops/install/lnmp\_conf/my-5.7.cnf进行对应优化
+注意：非MySQL 5.7和5.8版本请参考/opt/bigops/install/lnmp\_conf/my-5.7.cnf进行对应优化
 
 ### 配置Ansible
 
