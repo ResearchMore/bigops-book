@@ -74,7 +74,7 @@ mysql -h host -u user -p
 
 mysql&gt; show databases bigops;
 
-### **检查服务是否启动**
+### **检查服务端口是否启动**
 
 > \# netstat -nptl\|egrep 3000
 >
@@ -86,11 +86,21 @@ mysql&gt; show databases bigops;
 >
 > tcp        0      0 127.0.0.1:30003             0.0.0.0:\*                   LISTEN      26830/java
 
-运行下面命令，如果返回值包括「sso系统正常」，说明运行正常，如果没有返回值说明有问题，需要详细检查数据库配置，可以参考这个文件/opt/bigops/install/lnmp\_conf/my-5.7.cnf。
+### 验证sso服务是否正常
 
 > curl 127.0.0.1:30001/signin/login
 
 ![](/assets/checkloginstatus.png)
+
+如果返回值包括「sso系统正常」，说明运行正常，如果没有返回值说明有问题，需要详细检查数据库配置，可以参考这个文件/opt/bigops/install/lnmp\_conf/my-5.7.cnf。
+
+### 验证work服务是否正常
+
+> curl 127.0.0.1:30003/api/common/ssourl/
+
+### ![](/assets/checkwork.png)
+
+如果返回message为ok就是正常
 
 ### 启动Nginx
 
