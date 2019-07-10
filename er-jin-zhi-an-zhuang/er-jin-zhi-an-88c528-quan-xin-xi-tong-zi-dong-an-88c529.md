@@ -54,7 +54,7 @@ Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 
 切记设置！切记设置！切记设置！！！
 
-### 运行安装文件
+### 下载并运行安装脚本
 
 > wget -O /opt/bigops/install/newos\_install.sh [https://raw.githubusercontent.com/yunweibang/bigops-install/master/newos\_install.sh](https://raw.githubusercontent.com/yunweibang/bigops-install/master/newos_install.sh)
 >
@@ -94,7 +94,7 @@ mysql&gt; show databases bigops;
 
 ### 登录系统
 
-域名：http://work.bigops.com  \(就是你刚才设置的域名\)
+域名：[http://work.bigops.com](http://work.bigops.com)  \(就是你刚才设置的域名\)
 
 默认账号：admin
 
@@ -106,9 +106,7 @@ mysql&gt; show databases bigops;
 
 > sh /opt/bigops/sbin/bigserver.sh restart
 
-bigserver配置文件在
-
-/opt/bigops/sbin/bigserver.properties
+bigserver配置文件在/opt/bigops/sbin/bigserver.properties
 
 可以根据需要调整轮询时间
 
