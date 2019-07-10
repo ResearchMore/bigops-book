@@ -46,13 +46,15 @@ MySQL 5.7取消密码复杂度及更新密码
 >
 > set global validate\_password\_length=6;
 >
-> \#修改过期规则
+> \#添加用户并修改过期规则
 >
-> ALTER USER 'root'@'localhost' PASSWORD EXPIRE NEVER;
+> ALTER USER 'root'@'127.0.0.1' PASSWORD EXPIRE NEVER;
+>
+>
 >
 > \#更新密码
 >
-> ALTER USER 'root'@'localhost' IDENTIFIED BY 'your\_password';
+> ALTER USER 'root'@'127.0.0.1' IDENTIFIED BY 'your\_password';
 >
 > flush privileges;
 
