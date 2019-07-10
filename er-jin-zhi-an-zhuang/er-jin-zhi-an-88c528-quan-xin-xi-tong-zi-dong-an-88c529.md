@@ -114,7 +114,7 @@ bigserver配置文件在/opt/bigops/sbin/bigserver.properties
 
 可以根据需要调整轮询时间
 
-![](/assets/bigserver.png)
+![](/assets/bigserversetting.png)
 
 ### 设置定时清理日志
 
