@@ -32,11 +32,15 @@
 >
 > systemctl start  mysqld.service
 
-查看MySQL登录密码
+查找MySQL初始化的登录密码
 
 > egrep 'temporary password' /var/log/mysqld.log
 
-登录MySQL，取消MySQL密码复杂度设置
+登录MySQL
+
+> mysql -uroot -p
+
+取消MySQL密码复杂度设
 
 > set global validate\_password\_policy=0;
 >
