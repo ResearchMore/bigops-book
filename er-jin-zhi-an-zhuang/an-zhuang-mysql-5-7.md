@@ -34,7 +34,7 @@ centos 7启动命令
 
 > mysql -uroot -p
 
-MySQL 5.7取消密码复杂度及更新密码
+取消密码复杂度
 
 > set global validate\_password\_policy=0;
 >
@@ -45,21 +45,21 @@ MySQL 5.7取消密码复杂度及更新密码
 > set global validate\_password\_special\_char\_count=0;
 >
 > set global validate\_password\_length=6;
->
-> \#修改root@localhost密码
->
+
+修改root@localhost密码，your\_password改成你的密码
+
 > ALTER USER 'root'@'localhost' IDENTIFIED BY 'your\_password' PASSWORD EXPIRE NEVER
 >
 > ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql\_native\_password BY 'your\_password';
->
-> \#添加用户并修改过期规则
->
+
+添加用户并修改过期规则
+
 > create user 'root'@'127.0.0.1' IDENTIFIED BY 'your\_password';
 >
 > ALTER USER 'root'@'127.0.0.1' PASSWORD EXPIRE NEVER;
->
-> \#给用户授权，重要！重要！重要！
->
+
+给用户授权，重要！重要！重要！
+
 > grant all privileges on \*.\* to 'root'@'127.0.0.1';
 >
 > \#更新密码
@@ -68,7 +68,7 @@ MySQL 5.7取消密码复杂度及更新密码
 >
 > flush privileges;
 
-优化MySQL 5.7
+优化MySQL
 
 > cp -f /opt/bigops/install/lnmp\_conf/my-5.7.cnf /etc/my.cnf
 >
@@ -76,9 +76,9 @@ MySQL 5.7取消密码复杂度及更新密码
 >
 > 修改innodb\_buffer\_pool\_size=3G为你的内存的60%
 
-最后重启MySQL
+重启MySQL
 
 > service mysqld restart
 
-注意：非MySQL 5.7和5.8版本请参考/opt/bigops/install/lnmp\_conf/my-5.7.cnf进行对应优化
+
 
