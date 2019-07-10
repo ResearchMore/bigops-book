@@ -134,7 +134,9 @@ Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 
 mysql -h host -u user -p
 
-mysql&gt; show databases bigops;
+mysql&gt; show databases;
+
+查看是否有bigops
 
 ### **检查服务端口是否启动**
 
