@@ -41,7 +41,7 @@ Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 >
 > 需要重启系统
 
-### 关闭防火墙，或者添加端口80端口
+### 关闭防火墙，或者容许访问80端口
 
 centos 6
 
