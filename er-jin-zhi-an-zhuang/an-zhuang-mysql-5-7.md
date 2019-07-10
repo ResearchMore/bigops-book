@@ -2,11 +2,13 @@
 
 ### 脚本自动安装
 
+上传mysqlrpm.tar.gz安装包到/opt/bigops/install/soft/下，安装包请进QQ群索取
+
 下载安装脚本
 
 > wget -O /opt/bigops/install/mysql\_install.sh
 
-设置安装参数vi /opt/bigops/install/mysql\_install.sh 
+设置安装参数，vi /opt/bigops/install/mysql\_install.sh
 
 > mysqlver=5.7  \#不需要修改
 >
@@ -30,7 +32,11 @@
 
 > sh /opt/bigops/install/mysql\_install.sh
 
+如果出现红框里的「Starting mysqld: ok 」，代表安装成功。默认root@localhost用户密码为空，建议设置一下。
+
 ![](/assets/installmysql.png)
+
+
 
 ### 手动安装
 
