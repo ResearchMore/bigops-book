@@ -46,11 +46,11 @@
 
 Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 
-配置内容如下，IP改成你自己服务器的
+配置内容如下
 
-192.168.100.2 sso.bigops.com
+你的服务器IP sso.bigops.com
 
-192.168.100.2 work.bigops.com
+你的服务器IP work.bigops.com
 
 切记设置！切记设置！切记设置！！！
 
