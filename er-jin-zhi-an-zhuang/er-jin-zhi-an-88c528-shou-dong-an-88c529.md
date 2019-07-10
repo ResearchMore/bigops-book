@@ -86,7 +86,7 @@
 >
 > cp -f /opt/bigops/install/ansible.cfg /root/.ansible.cfg
 
-修改文件/etc/ansible/ansible.cfg
+修改文件/etc/ansible/ansible.cfg，编辑内容
 
 > \[defaults\]
 >
