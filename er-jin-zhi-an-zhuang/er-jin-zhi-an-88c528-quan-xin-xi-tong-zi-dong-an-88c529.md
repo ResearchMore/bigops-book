@@ -14,7 +14,7 @@
 >
 > mv bigops-1.0.0 bigops
 
-### 安装MySQL 5.7，其他版本类似
+### 安装MySQL 5.7或5.8，其他版本类似
 
 添加安装源并安装
 
@@ -26,7 +26,11 @@
 
 centos 6启动命令
 
+> chown -R mysql:mysql /var/lib/mysql
+>
 > service mysqld start
+>
+> 如果启动失败，有可能/var/lib/mysql/有以前的残留文件，需要删除
 
 centos 7启动命令
 
@@ -40,7 +44,7 @@ centos 7启动命令
 
 > mysql -uroot -p
 
-取消MySQL密码复杂度设
+MySQL 5.7取消密码复杂度及更新密码
 
 > set global validate\_password\_policy=0;
 >
@@ -50,19 +54,51 @@ centos 7启动命令
 >
 > set global validate\_password\_special\_char\_count=0;
 >
-> set global validate\_password\_length=3;
+> set global validate\_password\_length=6;
+>
+> \#修改过期规则
 >
 > ALTER USER 'root'@'localhost' PASSWORD EXPIRE NEVER;
 >
+> \#更新密码
+>
+> ALTER USER 'root'@'localhost' IDENTIFIED BY 'your\_password';
+>
 > flush privileges;
 
-修改root默认登录密码，your\_password为你的新密码
+MySQL 5.8取消密码复杂度及更新密码
 
-> ALTER USER 'root'@'localhost' IDENTIFIED BY 'your\_password';
+> set global validate\_password.policy=0;
+>
+> set global validate\_password.mixed\_case\_count=0;
+>
+> set global validate\_password.number\_count=3;
+>
+> set global validate\_password.special\_char\_count=0;
+>
+> set global validate\_password.length=6
+>
+> \#修改过期规则
+>
+> ALTER USER 'root'@'localhost' IDENTIFIED BY 'your\_password' PASSWORD EXPIRE NEVER;
+>
+> \#更新密码
+>
+> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql\_native\_password BY 'your\_password';
+>
+> flush privileges;
 
-优化MySQL
+优化MySQL 5.7
 
 > cp -f /opt/bigops/install/lnmp\_conf/my-5.7.cnf /etc/my.cnf
+>
+> 修改datadir=/var/lib/mysql为你的数据存储目录
+>
+> 修改innodb\_buffer\_pool\_size=3G为你的内存的60%
+
+优化MySQL 5.8
+
+> cp -f /opt/bigops/install/lnmp\_conf/my-5.8.cnf /etc/my.cnf
 >
 > 修改datadir=/var/lib/mysql为你的数据存储目录
 >
