@@ -84,7 +84,7 @@ centos 7启动命令
 
 > cp -f /opt/bigops/install/lnmp\_conf/my-5.7.cnf /etc/my.cnf
 >
-> 修改datadir=/var/lib/mysql为你的数据存储目录
+> 修改datadir=/var/lib/mysql为你的数据存储目录，这个目录需要给mysql用户属主权限chown -R mysql:mysql xxxxxxxxxx
 >
 > 修改innodb\_buffer\_pool\_size=3G为你的内存的60%
 
