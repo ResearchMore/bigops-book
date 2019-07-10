@@ -12,7 +12,7 @@ vi /etc/yum.repos.d/mysql-community.repo
 >
 > name=MySQL 5.7 Community Server
 >
-> baseurl=http://repo.mysql.com/yum/mysql-5.7-community/el/$releasever/$basearch/
+> baseurl=[http://repo.mysql.com/yum/mysql-5.7-community/el/$releasever/$basearch/](http://repo.mysql.com/yum/mysql-5.7-community/el/$releasever/$basearch/)
 >
 > enabled=1  \#这里设置为1，把其他版本设置为0
 >

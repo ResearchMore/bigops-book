@@ -94,7 +94,7 @@ mysql&gt; show databases bigops;
 
 ### 登录系统
 
-域名：[http://work.bigops.com](http://work.bigops.com)  \(就是你刚才设置的域名\)
+域名：[http://work.bigops.com](http://work.bigops.com)  \(就是你刚才设置的homeurl\)
 
 默认账号：admin
 
