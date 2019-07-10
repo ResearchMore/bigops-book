@@ -104,6 +104,12 @@ mysql&gt; show databases bigops;
 
 > sh /opt/bigops/sbin/bigserver.sh restart
 
+bigserver配置文件在
+
+/opt/bigops/sbin/bigserver.properties
+
+可以根据需要调整轮询时间
+
 ### 设置定时清理日志
 
 > crontab -e
