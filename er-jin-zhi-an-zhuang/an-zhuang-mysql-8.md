@@ -6,7 +6,19 @@
 
 设置安装源，打开对应版本的源
 
-> vi /etc/yum.repos.d/mysql-community.repo
+vi /etc/yum.repos.d/mysql-community.repo
+
+> \[mysql80-community\]
+>
+> name=MySQL 8.0 Community Server
+>
+> baseurl=[http://repo.mysql.com/yum/mysql-8.0-community/el/$releasever/$basearch/](http://repo.mysql.com/yum/mysql-8.0-community/el/$releasever/$basearch/)
+>
+> enabled=1  \#这里设置为1，把其他版本设置为0
+>
+> gpgcheck=0
+>
+> gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql
 
 安装MySQL
 
