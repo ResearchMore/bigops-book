@@ -94,7 +94,7 @@ mysql&gt; show databases bigops;
 
 ### 启动Nginx
 
-service nginx restart
+> service nginx restart
 
 ### 登录系统
 
