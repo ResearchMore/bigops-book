@@ -1,6 +1,6 @@
 ## 访问GitHub获取文件
 
-### 统一认证SSO
+### BigOps统一认证SSO
 
 [https://github.com/yunweibang/bigops-sso](https://github.com/yunweibang/bigops-sso)
 
@@ -11,10 +11,6 @@
 ### BigOps系统Server
 
 [https://github.com/yunweibang/bigops-server](https://github.com/yunweibang/bigops-server)
-
-### 安装向导
-
-[https://github.com/yunweibang/bigops-wizard](https://github.com/yunweibang/bigops-wizard)
 
 ## **用JAVA管理软件导入、编译打包，这里不再详细介绍。**
 
