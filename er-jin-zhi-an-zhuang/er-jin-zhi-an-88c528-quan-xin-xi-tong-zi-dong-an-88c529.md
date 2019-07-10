@@ -24,12 +24,12 @@
 
 启动数据库
 
-> centos 6启动
->
+centos 6启动命令
+
 > service mysqld start
->
-> cent 7启动
->
+
+centos 7启动命令
+
 > systemctl start  mysqld.service
 
 查找MySQL初始化的登录密码
