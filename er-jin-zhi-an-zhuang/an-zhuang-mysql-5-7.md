@@ -56,7 +56,7 @@ centos 7启动命令
 
 > mysql -uroot -p
 
-取消密码复杂度
+取消密码复杂度，有的小版本有，有的小版本没这些变量，没有就忽略
 
 > set global validate\_password\_policy=0;
 >
@@ -70,21 +70,15 @@ centos 7启动命令
 
 修改root@localhost密码，your\_password改成你的密码
 
+> use mysql;
+>
 > ALTER USER 'root'@'localhost' IDENTIFIED BY 'your\_password' PASSWORD EXPIRE NEVER;
 >
-> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql\_native\_password BY 'your\_password';
+> grant all privileges on \*.\* to "root"@"localhost" identified with mysql\_native\_password by "your\_password";
 
-添加用户root@127.0.0.1，给用户授权，重要！重要！重要！
+添加root@127.0.0.1用户，your\_password改成你的密码。重要！重要！重要！
 
-> create user 'root'@'127.0.0.1' IDENTIFIED BY 'your\_password';
->
-> ALTER USER 'root'@'127.0.0.1' PASSWORD EXPIRE NEVER;
->
-> grant all privileges on \*.\* to 'root'@'127.0.0.1';
-
-更新密码
-
-> ALTER USER 'root'@'127.0.0.1' IDENTIFIED BY 'your\_password';
+> grant all privileges on \*.\* to "root"@"127.0.0.1" identified with mysql\_native\_password by "your\_password";
 >
 > flush privileges;
 

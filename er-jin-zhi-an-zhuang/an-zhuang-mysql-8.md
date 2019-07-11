@@ -66,6 +66,8 @@ centos 7启动命令
 
 修改root@localhost密码，your\_password改成你的密码
 
+> use mysql;
+>
 > ALTER USER 'root'@'localhost' IDENTIFIED BY 'your\_password' PASSWORD EXPIRE NEVER;
 >
 > ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql\_native\_password BY 'your\_password';
