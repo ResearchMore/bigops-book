@@ -20,26 +20,6 @@
 
 [安装MySQL 5.7](/er-jin-zhi-an-zhuang/an-zhuang-mysql-5-7.md)   点我
 
-### 配置Ansible
-
-修改文件/etc/ansible/ansible.cfg
-
-> \[defaults\]
->
-> inventory = /etc/ansible/hosts
->
-> stdout =json
->
-> host\_key\_checking= False
->
-> deprecation\_warnings=False
->
-> \[ssh\_connection\]
->
-> scp\_if\_ssh=True
->
-> ssh\_args = -o LogLevel=quiet -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
-
 ### 配置hosts文件
 
 如果你没有注册域名，需要给服务器和你的笔记本系统都配置hosts。
@@ -115,6 +95,26 @@ mysql&gt; show databases;
 默认密码：bigops
 
 登陆后请尽快修改密码。
+
+### 配置Ansible
+
+如果ansible已安装成功，这个文件/etc/ansible/ansible.cfg会存在，请修改
+
+> \[defaults\]
+>
+> inventory = /etc/ansible/hosts
+>
+> stdout =json
+>
+> host\_key\_checking= False
+>
+> deprecation\_warnings=False
+>
+> \[ssh\_connection\]
+>
+> scp\_if\_ssh=True
+>
+> ssh\_args = -o LogLevel=quiet -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
 
 ### 启动bigserver，bigserver服务用于执行一些内置任务
 
