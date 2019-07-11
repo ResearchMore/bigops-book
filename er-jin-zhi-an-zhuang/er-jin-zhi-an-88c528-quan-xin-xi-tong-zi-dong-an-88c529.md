@@ -44,15 +44,7 @@ Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 >
 > dbhost不要填localhost，填127.0.0.1或对应IP
 
-![](/assets/Xnip2019-07-11_10-51-41.jpg)
-
-### 检查数据库是否创建成功
-
-用你填写的host、port、user、pass登录MySQL
-
-mysql -h host -u user -p
-
-mysql&gt; show databases;
+![](/assets/Xnip2019-07-11_21-15-29.jpg)
 
 ### **检查服务端口是否启动**
 
