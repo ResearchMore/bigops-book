@@ -52,7 +52,7 @@ centos 7启动命令
 
 > mysql -uroot -p
 
-取消密码复杂度
+取消密码复杂度，有的小版本有，有的小版本没这些变量，没有就忽略
 
 > set global validate\_password.policy=0;
 >
