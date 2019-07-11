@@ -82,9 +82,11 @@ mysql&gt; show databases;
 
 如果返回message为ok就是正常
 
-### 启动Nginx
+### 启动Nginx和MySQL
 
 > service nginx restart
+>
+> service mysqld restart
 
 ### 登录系统
 
