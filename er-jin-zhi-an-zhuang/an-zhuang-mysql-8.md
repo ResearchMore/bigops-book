@@ -79,10 +79,6 @@ centos 7启动命令
 > ALTER USER 'root'@'127.0.0.1' IDENTIFIED BY 'your\_password' PASSWORD EXPIRE NEVER;
 >
 > grant all privileges on \*.\* to 'root'@'127.0.0.1';
-
-更新密码
-
-> ALTER USER 'root'@'127.0.0.1' IDENTIFIED WITH mysql\_native\_password BY 'your\_password';
 >
 > flush privileges;
 
