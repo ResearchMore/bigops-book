@@ -32,7 +32,7 @@ vi /etc/yum.repos.d/mysql-community.repo
 >
 > 修改innodb\_buffer\_pool\_size=3G为你的内存的60%
 
-初始化目录
+初始化目录，会丢失以前的数据，确认没有有用数据再操作
 
 > mysqld --user=mysql --lower-case-table-names=0 --initialize-insecure
 >
