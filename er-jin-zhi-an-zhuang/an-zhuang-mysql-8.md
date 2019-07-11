@@ -28,13 +28,15 @@ vi /etc/yum.repos.d/mysql-community.repo
 
 > cp -f /opt/bigops/install/lnmp\_conf/my-8.cnf /etc/my.cnf
 >
-> 修改datadir=/var/lib/mysql为你的数据存储目录，这个目录需要给mysql用户属主权限chown -R mysql:mysql xxxxxxxxxx。修改innodb\_buffer\_pool\_size=3G为你的内存的60%
+> 修改datadir=/var/lib/mysql为你的数据存储目录，这个目录需要给mysql用户属主权限chown -R mysql:mysql xxxxxxxxxx。
+>
+> 修改innodb\_buffer\_pool\_size=3G为你的内存的60%
 
 初始化目录
 
 > mysqld --user=mysql --lower-case-table-names=0 --initialize-insecure
 >
-> root默认口令为空。如果启动失败，有可能/var/lib/mysql/有以前的残留文件，需要删除
+> root默认口令为空。如果启动失败，有可能/var/lib/mysql/有以前的残留文件，需要删除。
 
 centos 6启动命令
 
@@ -68,14 +70,12 @@ centos 7启动命令
 >
 > ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql\_native\_password BY 'your\_password';
 
-添加用户root@127.0.0.1
+添加用户root@127.0.0.1，给用户授权，重要！重要！重要！
 
 > create user 'root'@'127.0.0.1' identified by 'your\_password';
 >
 > ALTER USER 'root'@'127.0.0.1' IDENTIFIED BY 'your\_password' PASSWORD EXPIRE NEVER;
-
-给用户授权，重要！重要！重要！
-
+>
 > grant all privileges on \*.\* to 'root'@'127.0.0.1';
 
 更新密码
@@ -83,8 +83,6 @@ centos 7启动命令
 > ALTER USER 'root'@'127.0.0.1' IDENTIFIED WITH mysql\_native\_password BY 'your\_password';
 >
 > flush privileges;
-
-
 
 重启MySQL
 
