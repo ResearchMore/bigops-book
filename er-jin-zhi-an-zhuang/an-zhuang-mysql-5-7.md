@@ -24,6 +24,14 @@ vi /etc/yum.repos.d/mysql-community.repo
 
 > yum -y install mysql-community-server mysql-community-client mysql-community-devel mysql-community-libs-compat
 
+复制优化的配置文件
+
+> cp -f /opt/bigops/install/lnmp\_conf/my-5.7.cnf /etc/my.cnf
+>
+> 修改datadir=/var/lib/mysql为你的数据存储目录，这个目录需要给mysql用户属主权限chown -R mysql:mysql xxxxxxxxxx。
+>
+> 修改innodb\_buffer\_pool\_size=3G为你的内存的60%
+
 启动数据库
 
 centos 6启动命令
@@ -64,29 +72,19 @@ centos 7启动命令
 >
 > ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql\_native\_password BY 'your\_password';
 
-添加用户并修改过期规则
+添加用户root@127.0.0.1，给用户授权，重要！重要！重要！
 
 > create user 'root'@'127.0.0.1' IDENTIFIED BY 'your\_password';
 >
 > ALTER USER 'root'@'127.0.0.1' PASSWORD EXPIRE NEVER;
-
-给用户授权，重要！重要！重要！
-
+>
 > grant all privileges on \*.\* to 'root'@'127.0.0.1';
->
-> \#更新密码
->
+
+更新密码
+
 > ALTER USER 'root'@'127.0.0.1' IDENTIFIED BY 'your\_password';
 >
 > flush privileges;
-
-优化MySQL
-
-> cp -f /opt/bigops/install/lnmp\_conf/my-5.7.cnf /etc/my.cnf
->
-> 修改datadir=/var/lib/mysql为你的数据存储目录，这个目录需要给mysql用户属主权限chown -R mysql:mysql xxxxxxxxxx
->
-> 修改innodb\_buffer\_pool\_size=3G为你的内存的60%
 
 重启MySQL
 
