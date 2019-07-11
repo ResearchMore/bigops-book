@@ -32,15 +32,17 @@ vi /etc/yum.repos.d/mysql-community.repo
 >
 > 修改innodb\_buffer\_pool\_size=3G为你的内存的60%
 
-启动数据库
+初始化目录
+
+> mysqld --user=mysql --lower-case-table-names=0 --initialize-insecure
+>
+> root默认口令为空。如果启动失败，有可能basedir有以前的残留文件，需要删除。
 
 centos 6启动命令
 
 > chown -R mysql:mysql /var/lib/mysql
 >
 > service mysqld start
->
-> 如果启动失败，有可能/var/lib/mysql/有以前的残留文件，需要删除。也可以用命令mysqld --initialize-insecure重新初始化数据库，需要basedir目录为空。
 
 centos 7启动命令
 

@@ -36,7 +36,7 @@ vi /etc/yum.repos.d/mysql-community.repo
 
 > mysqld --user=mysql --lower-case-table-names=0 --initialize-insecure
 >
-> root默认口令为空。如果启动失败，有可能/var/lib/mysql/有以前的残留文件，需要删除。
+> root默认口令为空。如果启动失败，有可能basedir有以前的残留文件，需要删除。
 
 centos 6启动命令
 
