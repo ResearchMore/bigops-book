@@ -30,7 +30,19 @@
 
 ### 安装Medusa，一个密码检查工具
 
-> yum -y install libssh2 openssl openssl-libs openssl-devel
+> yum -y install openssl openssl-libs openssl-devel
+>
+> cd /opt/bigops/install/soft/
+>
+> tar zxvf libssh2-1.8.2.tar.gz
+>
+> cd libssh2-1.8.2
+>
+> ./configure --prefix=/usr
+>
+> make && make install
+>
+>
 >
 > cd /opt/bigops/install/soft/
 >
@@ -38,7 +50,7 @@
 >
 > cd medusa-2.2
 >
-> ./configure --prefix=/usr
+> ./configure --prefix=/usr --enable-module-ssh=yes
 >
 > make && make install
 
