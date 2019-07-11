@@ -44,7 +44,7 @@ Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 >
 > dbhost不要填localhost，填127.0.0.1或对应IP
 
-![](/assets/Xnip2019-07-11_10-41-59.jpg)
+![](/assets/Xnip2019-07-11_10-51-41.jpg)
 
 ### 检查数据库是否创建成功
 
