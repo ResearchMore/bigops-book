@@ -1,6 +1,6 @@
-### centos 6 和 centos 7自动化脚本安装MySQL 5.7
+### centos 6 x86\_64和 centos 7 x86\_64使用脚本安装MySQL 5.7
 
-> wget https://raw.githubusercontent.com/yunweibang/bigops-install/master/mysql57.sh
+> wget [https://raw.githubusercontent.com/yunweibang/bigops-install/master/mysql57.sh](https://raw.githubusercontent.com/yunweibang/bigops-install/master/mysql57.sh)
 >
 > sh mysql57.sh
 
