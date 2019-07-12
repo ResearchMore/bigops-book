@@ -8,7 +8,7 @@
 
 > please input root@127.0.0.1 password, default bigops
 >
-> &gt;
+> &gt;输入你的密码
 
 ### 方法二：手动安装MySQL 5.7
 
