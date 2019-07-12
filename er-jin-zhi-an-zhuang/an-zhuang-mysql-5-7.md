@@ -14,23 +14,15 @@
 
 添加安装源
 
-> cp -f /opt/bigops/install/yum.repos.d/\* /etc/yum.repos.d/
-
-设置安装源，打开对应版本的源
-
-vi /etc/yum.repos.d/mysql-community.repo
-
-> \[mysql57-community\]
+> wget -O /etc/yum.repos.d/CentOS-Base.repo [https://raw.githubusercontent.com/yunweibang/yum.repos.d/master/CentOS-Base.repo](https://raw.githubusercontent.com/yunweibang/yum.repos.d/master/CentOS-Base.repo)
 >
-> name=MySQL 5.7 Community Server
+> wget -O /etc/yum.repos.d/epel.repo [https://raw.githubusercontent.com/yunweibang/yum.repos.d/master/epel.repo](https://raw.githubusercontent.com/yunweibang/yum.repos.d/master/epel.repo)
 >
-> baseurl=[http://repo.mysql.com/yum/mysql-5.7-community/el/$releasever/$basearch/](http://repo.mysql.com/yum/mysql-5.7-community/el/$releasever/$basearch/)
+> wget -O /etc/yum.repos.d/mysql-community.repo [https://raw.githubusercontent.com/yunweibang/yum.repos.d/master/mysql-community.repo](https://raw.githubusercontent.com/yunweibang/yum.repos.d/master/mysql-community.repo)
 >
-> enabled=1  \#这里设置为1，把其他版本设置为0
+> wget -O /etc/yum.repos.d/nginx.repo [https://raw.githubusercontent.com/yunweibang/yum.repos.d/master/nginx.repo](https://raw.githubusercontent.com/yunweibang/yum.repos.d/master/nginx.repo)
 >
-> gpgcheck=0
->
-> gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql
+> wget -O /etc/yum.repos.d/remi.repo [https://raw.githubusercontent.com/yunweibang/yum.repos.d/master/remi.repo](https://raw.githubusercontent.com/yunweibang/yum.repos.d/master/remi.repo)
 
 安装MySQL
 
