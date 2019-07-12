@@ -28,11 +28,11 @@ vi /etc/yum.repos.d/mysql-community.repo
 
 > cp -f /opt/bigops/install/lnmp\_conf/my-8.cnf /etc/my.cnf
 >
-> 修改datadir=/var/lib/mysql为你的数据存储目录，这个目录需要给mysql用户属主权限chown -R mysql:mysql xxxxxxxxxx。
+> 修改参数innodb\_buffer\_pool\_size为你的内存的50%~60%，比如你有8G内存：
 >
-> 修改innodb\_buffer\_pool\_size=2G为你的内存的60%
+> innodb\_buffer\_pool\_size=4G
 
-初始化目录，会丢失以前的数据，确认没有有用数据再操作
+初始化目录，会丢失以前的数据，确认当前数据是否有用，再进行操作
 
 > mysqld --user=mysql --lower-case-table-names=0 --initialize-insecure
 >

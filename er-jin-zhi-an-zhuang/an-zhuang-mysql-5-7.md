@@ -1,4 +1,16 @@
-### 安装MySQL 5.7
+### \(推荐\)方法一：脚本安装MySQL 5.7
+
+> wget [https://raw.githubusercontent.com/yunweibang/bigops-install/master/mysql57.sh](https://raw.githubusercontent.com/yunweibang/bigops-install/master/mysql57.sh)
+>
+> sh mysql57.sh
+
+看到下面提示，输入root@127.0.0.1用户密码，保存好一会使用。另外root@localhost密码为空
+
+> please input root@127.0.0.1 password, default bigops
+>
+> &gt;
+
+### 方法二：手动安装MySQL 5.7
 
 添加安装源
 
@@ -24,15 +36,15 @@ vi /etc/yum.repos.d/mysql-community.repo
 
 > yum -y install mysql-community-server mysql-community-client mysql-community-devel mysql-community-libs-compat
 
-复制优化的配置文件
+优化的配置文件
 
-> cp -f /opt/bigops/install/lnmp\_conf/my-5.7.cnf /etc/my.cnf
+> wget -O /etc/my.cnf [https://raw.githubusercontent.com/yunweibang/bigops-LNMP-config/master/mysql/my-5.7.cnf](https://raw.githubusercontent.com/yunweibang/bigops-LNMP-config/master/mysql/my-5.7.cnf)
 >
-> 修改datadir=/var/lib/mysql为你的数据存储目录，这个目录需要给mysql用户属主权限chown -R mysql:mysql xxxxxxxxxx。
+> 修改参数innodb\_buffer\_pool\_size为你的内存的50%~60%，比如你有8G内存：
 >
-> 修改innodb\_buffer\_pool\_size=2G为你的内存的60%
+> innodb\_buffer\_pool\_size=4G
 
-初始化目录，会丢失以前的数据，确认没有有用数据再操作
+初始化目录，会丢失以前的数据，确认当前数据是否有用，再进行操作
 
 > mysqld --user=mysql --lower-case-table-names=0 --initialize-insecure
 >
