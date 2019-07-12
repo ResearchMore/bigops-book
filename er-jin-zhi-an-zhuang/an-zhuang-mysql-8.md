@@ -14,31 +14,15 @@
 
 添加安装源
 
-> wget -O /etc/yum.repos.d/CentOS-Base.repo https://raw.githubusercontent.com/yunweibang/yum.repos.d/master/CentOS-Base.repo
+> wget -O /etc/yum.repos.d/CentOS-Base.repo [https://raw.githubusercontent.com/yunweibang/yum.repos.d/master/CentOS-Base.repo](https://raw.githubusercontent.com/yunweibang/yum.repos.d/master/CentOS-Base.repo)
 >
-> wget -O /etc/yum.repos.d/epel.repo https://raw.githubusercontent.com/yunweibang/yum.repos.d/master/epel.repo
+> wget -O /etc/yum.repos.d/epel.repo [https://raw.githubusercontent.com/yunweibang/yum.repos.d/master/epel.repo](https://raw.githubusercontent.com/yunweibang/yum.repos.d/master/epel.repo)
 >
-> wget -O /etc/yum.repos.d/mysql-community.repo https://raw.githubusercontent.com/yunweibang/yum.repos.d/master/mysql-community.repo
+> wget -O /etc/yum.repos.d/mysql8-community.repo [https://raw.githubusercontent.com/yunweibang/yum.repos.d/master/mysql8-community.repo](https://raw.githubusercontent.com/yunweibang/yum.repos.d/master/mysql-community.repo)
 >
-> wget -O /etc/yum.repos.d/nginx.repo https://raw.githubusercontent.com/yunweibang/yum.repos.d/master/nginx.repo
+> wget -O /etc/yum.repos.d/nginx.repo [https://raw.githubusercontent.com/yunweibang/yum.repos.d/master/nginx.repo](https://raw.githubusercontent.com/yunweibang/yum.repos.d/master/nginx.repo)
 >
-> wget -O /etc/yum.repos.d/remi.repo https://raw.githubusercontent.com/yunweibang/yum.repos.d/master/remi.repo
-
-设置安装源，打开对应版本的源
-
-vi /etc/yum.repos.d/mysql-community.repo
-
-> \[mysql80-community\]
->
-> name=MySQL 8.0 Community Server
->
-> baseurl=[http://repo.mysql.com/yum/mysql-8.0-community/el/$releasever/$basearch/](http://repo.mysql.com/yum/mysql-8.0-community/el/$releasever/$basearch/)
->
-> enabled=1  \#这里设置为1，把其他版本设置为0
->
-> gpgcheck=0
->
-> gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql
+> wget -O /etc/yum.repos.d/remi.repo [https://raw.githubusercontent.com/yunweibang/yum.repos.d/master/remi.repo](https://raw.githubusercontent.com/yunweibang/yum.repos.d/master/remi.repo)
 
 安装MySQL
 
