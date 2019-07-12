@@ -1,4 +1,16 @@
-### 手动安装MySQL 8
+### \(推荐\)方法一：脚本安装MySQL 8
+
+> wget [https://raw.githubusercontent.com/yunweibang/bigops-install/master/mysql8.sh](https://raw.githubusercontent.com/yunweibang/bigops-install/master/mysql8.sh)
+>
+> sh mysql8.sh
+
+看到下面提示，输入root@127.0.0.1用户密码，保存好一会使用。另外root@localhost密码为空
+
+> please input root@127.0.0.1 password, default bigops
+>
+> &gt;
+
+### 方法二：手动安装MySQL 8
 
 添加安装源
 
@@ -12,7 +24,7 @@ vi /etc/yum.repos.d/mysql-community.repo
 >
 > name=MySQL 8.0 Community Server
 >
-> baseurl=[http://repo.mysql.com/yum/mysql-8.0-community/el/$releasever/$basearch/](http://repo.mysql.com/yum/mysql-8.0-community/el/$releasever/$basearch/)
+> baseurl=http://repo.mysql.com/yum/mysql-8.0-community/el/$releasever/$basearch/
 >
 > enabled=1  \#这里设置为1，把其他版本设置为0
 >
