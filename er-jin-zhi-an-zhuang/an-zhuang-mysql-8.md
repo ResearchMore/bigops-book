@@ -1,4 +1,4 @@
-### 安装MySQL 8
+### 手动安装MySQL 8
 
 添加安装源
 
@@ -37,16 +37,6 @@ vi /etc/yum.repos.d/mysql-community.repo
 > mysqld --user=mysql --lower-case-table-names=0 --initialize-insecure
 >
 > root默认口令为空。如果启动失败，有可能basedir有以前的残留文件，需要删除。
-
-centos 6启动命令
-
-> chown -R mysql:mysql /var/lib/mysql
->
-> service mysqld start
-
-centos 7启动命令
-
-> systemctl start  mysqld.service
 
 登录MySQL
 
