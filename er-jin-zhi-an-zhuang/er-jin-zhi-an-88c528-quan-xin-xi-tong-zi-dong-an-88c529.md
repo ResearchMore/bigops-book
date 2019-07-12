@@ -74,11 +74,13 @@ Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 
 如果返回message为ok就是正常
 
-### 启动Nginx和MySQL
+### 启动Nginx，检查状态
 
 > service nginx restart
 >
-> service mysqld restart
+> ps aux\|grep nginx.conf
+
+![](/assets/nginx.png)
 
 ### 登录系统
 

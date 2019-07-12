@@ -42,8 +42,6 @@
 >
 > make && make install
 >
->
->
 > cd /opt/bigops/install/soft/
 >
 > tar zxvf medusa-2.2.tar.gz
@@ -178,9 +176,13 @@ mysql&gt; show databases;
 
 如果返回message为ok就是正常
 
-### 启动Nginx
+### 启动Nginx，检查状态
 
 > service nginx restart
+>
+> ps aux\|grep nginx.conf
+
+![](/assets/nginx.png)
 
 ### 登录系统
 
