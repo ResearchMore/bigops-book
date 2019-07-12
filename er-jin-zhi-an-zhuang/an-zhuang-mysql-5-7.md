@@ -30,7 +30,7 @@
 
 优化的配置文件
 
-> wget -O /etc/my.cnf [https://raw.githubusercontent.com/yunweibang/bigops-LNMP-config/master/mysql/my-5.7.cnf](https://raw.githubusercontent.com/yunweibang/bigops-LNMP-config/master/mysql/my-5.7.cnf)
+> wget -O /etc/my.cnf https://raw.githubusercontent.com/yunweibang/bigops-config/master/mysql/my-5.7.cnf
 >
 > chown -R mysql:mysql /var/lib/mysql
 >
