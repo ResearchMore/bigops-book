@@ -24,7 +24,7 @@ vi /etc/yum.repos.d/mysql-community.repo
 >
 > name=MySQL 8.0 Community Server
 >
-> baseurl=http://repo.mysql.com/yum/mysql-8.0-community/el/$releasever/$basearch/
+> baseurl=[http://repo.mysql.com/yum/mysql-8.0-community/el/$releasever/$basearch/](http://repo.mysql.com/yum/mysql-8.0-community/el/$releasever/$basearch/)
 >
 > enabled=1  \#这里设置为1，把其他版本设置为0
 >
@@ -36,9 +36,9 @@ vi /etc/yum.repos.d/mysql-community.repo
 
 > yum -y install mysql-community-server mysql-community-client mysql-community-devel mysql-community-libs-compat
 
-复制优化的配置文件
+优化配置文件
 
-> cp -f /opt/bigops/install/lnmp\_conf/my-8.cnf /etc/my.cnf
+> wget -O /etc/my.cnf https://raw.githubusercontent.com/yunweibang/bigops-LNMP-config/master/mysql/my-8.cnf
 >
 > 修改参数innodb\_buffer\_pool\_size为你的内存的50%~60%，比如你有8G内存：
 >

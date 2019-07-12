@@ -1,6 +1,6 @@
 ### \(推荐\)方法一：脚本安装MySQL 5.7
 
-> wget https://raw.githubusercontent.com/yunweibang/bigops-install/master/mysql57.sh
+> wget [https://raw.githubusercontent.com/yunweibang/bigops-install/master/mysql57.sh](https://raw.githubusercontent.com/yunweibang/bigops-install/master/mysql57.sh)
 >
 > sh mysql57.sh
 
@@ -24,7 +24,7 @@ vi /etc/yum.repos.d/mysql-community.repo
 >
 > name=MySQL 5.7 Community Server
 >
-> baseurl=http://repo.mysql.com/yum/mysql-5.7-community/el/$releasever/$basearch/
+> baseurl=[http://repo.mysql.com/yum/mysql-5.7-community/el/$releasever/$basearch/](http://repo.mysql.com/yum/mysql-5.7-community/el/$releasever/$basearch/)
 >
 > enabled=1  \#这里设置为1，把其他版本设置为0
 >
