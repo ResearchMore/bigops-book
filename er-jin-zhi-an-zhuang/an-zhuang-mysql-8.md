@@ -38,7 +38,9 @@ vi /etc/yum.repos.d/mysql-community.repo
 
 优化配置文件
 
-> wget -O /etc/my.cnf https://raw.githubusercontent.com/yunweibang/bigops-LNMP-config/master/mysql/my-8.cnf
+> wget -O /etc/my.cnf [https://raw.githubusercontent.com/yunweibang/bigops-LNMP-config/master/mysql/my-8.cnf](https://raw.githubusercontent.com/yunweibang/bigops-LNMP-config/master/mysql/my-8.cnf)
+>
+> chown -R mysql:mysql /var/lib/mysql
 >
 > 修改参数innodb\_buffer\_pool\_size为你的内存的50%~60%，比如你有8G内存：
 >
