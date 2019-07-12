@@ -14,7 +14,15 @@
 
 添加安装源
 
-> cp -f /opt/bigops/install/yum.repos.d/\* /etc/yum.repos.d/
+> wget -O /etc/yum.repos.d/CentOS-Base.repo https://raw.githubusercontent.com/yunweibang/yum.repos.d/master/CentOS-Base.repo
+>
+> wget -O /etc/yum.repos.d/epel.repo https://raw.githubusercontent.com/yunweibang/yum.repos.d/master/epel.repo
+>
+> wget -O /etc/yum.repos.d/mysql-community.repo https://raw.githubusercontent.com/yunweibang/yum.repos.d/master/mysql-community.repo
+>
+> wget -O /etc/yum.repos.d/nginx.repo https://raw.githubusercontent.com/yunweibang/yum.repos.d/master/nginx.repo
+>
+> wget -O /etc/yum.repos.d/remi.repo https://raw.githubusercontent.com/yunweibang/yum.repos.d/master/remi.repo
 
 设置安装源，打开对应版本的源
 
