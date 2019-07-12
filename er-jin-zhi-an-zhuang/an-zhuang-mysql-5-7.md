@@ -40,6 +40,8 @@ vi /etc/yum.repos.d/mysql-community.repo
 
 > wget -O /etc/my.cnf [https://raw.githubusercontent.com/yunweibang/bigops-LNMP-config/master/mysql/my-5.7.cnf](https://raw.githubusercontent.com/yunweibang/bigops-LNMP-config/master/mysql/my-5.7.cnf)
 >
+> chown -R mysql:mysql /var/lib/mysql
+>
 > 修改参数innodb\_buffer\_pool\_size为你的内存的50%~60%，比如你有8G内存：
 >
 > innodb\_buffer\_pool\_size=4G
@@ -49,20 +51,6 @@ vi /etc/yum.repos.d/mysql-community.repo
 > mysqld --user=mysql --lower-case-table-names=0 --initialize-insecure
 >
 > root默认口令为空。如果启动失败，有可能basedir有以前的残留文件，需要删除。
-
-centos 6启动命令
-
-> chown -R mysql:mysql /var/lib/mysql
->
-> service mysqld start
-
-centos 7启动命令
-
-> systemctl start  mysqld.service
-
-查找MySQL初始化的登录密码
-
-> egrep 'temporary password' /var/log/mysqld.log
 
 登录MySQL
 
