@@ -14,15 +14,17 @@
 >
 > mv bigops-1.0.0 bigops
 
-### 安装MySQL，建议版本用5.7
+### 安装MySQL 8或5.7，参考
 
-[安装MySQL 5.7](/er-jin-zhi-an-zhuang/an-zhuang-mysql-5-7.md)    点我
+[安装MySQL 8](/er-jin-zhi-an-zhuang/an-zhuang-mysql-8.md)   点我
+
+[安装MySQL 5.7](/er-jin-zhi-an-zhuang/an-zhuang-mysql-5-7.md)   点我
 
 ### 进入MySQL，创建数据库
 
 > mysql&gt;create database bigops;
 
-### 导入数据
+### 导入MySQL数据
 
 > cd /opt/bigops/install/mysql/
 >
@@ -56,7 +58,7 @@
 
 > yum -y install ansible
 >
-> cp -f /opt/bigops/install/ansible.cfg /root/.ansible.cfg
+> wget -O /opt/bigops/install/ansible.cfg /root/.ansible.cfg [https://raw.githubusercontent.com/yunweibang/bigops-config/master/ansible.cfg](https://raw.githubusercontent.com/yunweibang/bigops-config/master/ansible.cfg)
 
 修改文件/etc/ansible/ansible.cfg，编辑内容
 
@@ -106,15 +108,15 @@
 >
 > mkdir /opt/ngxlog
 >
-> cp -f /opt/bigops/install/lnmp\_conf/nginx.conf /etc/nginx/nginx.conf
+> wget -O /etc/nginx/nginx.conf https://raw.githubusercontent.com/yunweibang/bigops-LNMP-config/master/nginx/nginx.conf
 >
-> cp -f /opt/bigops/install/lnmp\_conf/conf.d/default.conf /etc/nginx/conf.d/default.conf
+> wget -O /etc/nginx/conf.d/default.conf https://raw.githubusercontent.com/yunweibang/bigops-LNMP-config/master/nginx/conf.d/default.conf
 >
-> cp -f /opt/bigops/install/lnmp\_conf/conf.d/sso.conf /etc/nginx/conf.d/sso.conf
+> wget -O /etc/nginx/conf.d/sso.conf https://raw.githubusercontent.com/yunweibang/bigops-LNMP-config/master/nginx/conf.d/sso.conf
 >
-> cp -f /opt/bigops/install/lnmp\_conf/conf.d/work.conf /etc/nginx/conf.d/work.conf
+> wget -O /etc/nginx/conf.d/work.conf https://raw.githubusercontent.com/yunweibang/bigops-LNMP-config/master/nginx/conf.d/work.conf
 >
-> cp -f /opt/bigops/install/lnmp\_conf/conf.d/zabbix.conf /etc/nginx/conf.d/zabbix.conf
+> wget -O /etc/nginx/conf.d/zabbix.conf https://raw.githubusercontent.com/yunweibang/bigops-LNMP-config/master/nginx/conf.d/zabbix.conf
 
 修改sso.conf、work.conf、zabbix.conf里的域名为你网站的域名
 
@@ -166,7 +168,7 @@ mysql&gt; show databases;
 
 ![](/assets/checkloginstatus.png)
 
-如果返回值包括「sso系统正常」，说明运行正常，如果没有返回值说明有问题，需要详细检查数据库配置，可以参考这个文件/opt/bigops/install/lnmp\_conf/my-5.7.cnf。
+如果返回值包括「sso系统正常」，说明运行正常，如果没有返回值说明有问题，需要详细检查数据库配置。
 
 ### 验证work服务是否正常
 
