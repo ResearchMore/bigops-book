@@ -96,7 +96,7 @@ Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 
 如果ansible已安装成功，这个文件/etc/ansible/ansible.cfg会存在，请修改
 
-> wget -O /etc/ansible/ansible.cfg https://raw.githubusercontent.com/yunweibang/bigops-config/master/ansible.cfg
+> wget -O /etc/ansible/ansible.cfg [https://raw.githubusercontent.com/yunweibang/bigops-config/master/ansible.cfg](https://raw.githubusercontent.com/yunweibang/bigops-config/master/ansible.cfg)
 
 ### 启动bigserver，bigserver服务用于执行一些内置任务
 
