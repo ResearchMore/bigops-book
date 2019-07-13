@@ -96,21 +96,7 @@ Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 
 如果ansible已安装成功，这个文件/etc/ansible/ansible.cfg会存在，请修改
 
-> \[defaults\]
->
-> inventory = /etc/ansible/hosts
->
-> stdout =json
->
-> host\_key\_checking= False
->
-> deprecation\_warnings=False
->
-> \[ssh\_connection\]
->
-> scp\_if\_ssh=True
->
-> ssh\_args = -o LogLevel=quiet -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
+> wget -O /etc/ansible/ansible.cfg https://raw.githubusercontent.com/yunweibang/bigops-config/master/ansible.cfg
 
 ### 启动bigserver，bigserver服务用于执行一些内置任务
 
