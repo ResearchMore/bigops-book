@@ -58,7 +58,13 @@
 
 > yum -y install ansible
 >
+> yum -y update openssh-clients
+>
 > wget -O /etc/ansible/ansible.cfg [https://raw.githubusercontent.com/yunweibang/bigops-config/master/ansible.cfg](https://raw.githubusercontent.com/yunweibang/bigops-config/master/ansible.cfg)
+
+openssh版本需要高于5.6，使用下面命令查看版本
+
+> rpm -qi openssh-clients\|egrep -i version
 
 修改ssh命令的配置文件 /etc/ssh/ssh\_config，将StrictHostKeyChecking设置为no
 
@@ -90,15 +96,15 @@
 >
 > mkdir /opt/ngxlog
 >
-> wget -O /etc/nginx/nginx.conf [https://raw.githubusercontent.com/yunweibang/bigops-LNMP-config/master/nginx/nginx.conf](https://raw.githubusercontent.com/yunweibang/bigops-LNMP-config/master/nginx/nginx.conf)
+> wget -O /etc/nginx/nginx.conf [https://raw.githubusercontent.com/yunweibang/bigops-config/master/nginx/nginx.conf](https://raw.githubusercontent.com/yunweibang/bigops-LNMP-config/master/nginx/nginx.conf)
 >
-> wget -O /etc/nginx/conf.d/default.conf [https://raw.githubusercontent.com/yunweibang/bigops-LNMP-config/master/nginx/conf.d/default.conf](https://raw.githubusercontent.com/yunweibang/bigops-LNMP-config/master/nginx/conf.d/default.conf)
+> wget -O /etc/nginx/conf.d/default.conf [https://raw.githubusercontent.com/yunweibang/bigops-config/master/nginx/conf.d/default.conf](https://raw.githubusercontent.com/yunweibang/bigops-LNMP-config/master/nginx/conf.d/default.conf)
 >
-> wget -O /etc/nginx/conf.d/sso.conf [https://raw.githubusercontent.com/yunweibang/bigops-LNMP-config/master/nginx/conf.d/sso.conf](https://raw.githubusercontent.com/yunweibang/bigops-LNMP-config/master/nginx/conf.d/sso.conf)
+> wget -O /etc/nginx/conf.d/sso.conf [https://raw.githubusercontent.com/yunweibang/bigops-config/master/nginx/conf.d/sso.conf](https://raw.githubusercontent.com/yunweibang/bigops-LNMP-config/master/nginx/conf.d/sso.conf)
 >
-> wget -O /etc/nginx/conf.d/work.conf [https://raw.githubusercontent.com/yunweibang/bigops-LNMP-config/master/nginx/conf.d/work.conf](https://raw.githubusercontent.com/yunweibang/bigops-LNMP-config/master/nginx/conf.d/work.conf)
+> wget -O /etc/nginx/conf.d/work.conf [https://raw.githubusercontent.com/yunweibang/bigops-config/master/nginx/conf.d/work.conf](https://raw.githubusercontent.com/yunweibang/bigops-LNMP-config/master/nginx/conf.d/work.conf)
 >
-> wget -O /etc/nginx/conf.d/zabbix.conf [https://raw.githubusercontent.com/yunweibang/bigops-LNMP-config/master/nginx/conf.d/zabbix.conf](https://raw.githubusercontent.com/yunweibang/bigops-LNMP-config/master/nginx/conf.d/zabbix.conf)
+> wget -O /etc/nginx/conf.d/zabbix.conf [https://raw.githubusercontent.com/yunweibang/bigops-config/master/nginx/conf.d/zabbix.conf](https://raw.githubusercontent.com/yunweibang/bigops-LNMP-config/master/nginx/conf.d/zabbix.conf)
 
 修改sso.conf、work.conf、zabbix.conf里的域名为你网站的域名
 
@@ -114,7 +120,7 @@ Linux位置/etc/hosts，Windows位置C:\Windows\System32\drivers\etc\hosts
 
 192.168.100.2 work.bigops.com
 
-切记设置！切记设置！切记设置！！！
+切记两个域名都要设置！切记设置！切记设置！！！
 
 ### 设置配置文件
 
